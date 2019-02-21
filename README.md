@@ -49,7 +49,7 @@ Explanation: 342 + 465 = 807.
 ```
 给定：[1,8,6,2,5,4,8,3,7]
 ```
-![72dd14b3a9a1e9aafab131ca42d2ed1a.png](./res/question_11.jpg)
+![72dd14b3a9a1e9aafab131ca42d2ed1a.png](./res/cover/question_11.jpg)
 ```
 组成的最大面积就是49
 ```
@@ -60,7 +60,7 @@ You are given a target value to search. If found in the array return its index, 
 You may assume no duplicate exists in the array.
 Your algorithm's runtime complexity must be in the order of&nbsp;O(logn).
 
-30. ***【Combination Sum】*** Given a set of candidate numbers (candidates) (without duplicates) and a target number (target), find all unique combinations in candidates where the candidate numbers sums to target.The same repeated number may be chosen from candidates unlimited number of times.
+30. ***【[Combination Sum](./doc/Combination Sum/readme.md)】*** Given a set of candidate numbers (candidates) (without duplicates) and a target number (target), find all unique combinations in candidates where the candidate numbers sums to target.The same repeated number may be chosen from candidates unlimited number of times.
 > Note:All numbers (including target) will be positive integers.The solution set must not contain duplicate combinations.
 
 Example:
@@ -98,7 +98,7 @@ Explanation: Since intervals [1,3] and [2,6] overlaps, merge them into [1,6].
 33. ***【Unique Paths II】*** A robot is located at the top-left corner of a m x n grid (marked 'Start' in the diagram below).
 The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked 'Finish' in the diagram below).
 Now consider if some obstacles are added to the grids. How many unique paths would there be?
-![50ee09bddc06507fc3d53fa1e5986ca6.png](./res/robot_maze.png)
+![50ee09bddc06507fc3d53fa1e5986ca6.png](./res/cover/robot_maze.png)
 An obstacle and empty space is marked as 1 and 0 respectively in the grid.
 > Note: m and n will be at most 100.
 
@@ -168,7 +168,7 @@ Your algorithm should run in O(n) time and uses constant extra space.
 
 37. ***【Trapping Rain Water】*** Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it is able to trap after raining.
 
-![a0b5725179e8d2e8540134afe72860be.png](./res/rainwatertrap.png)
+![a0b5725179e8d2e8540134afe72860be.png](./res/cover/rainwatertrap.png)
 
 The above elevation map is represented by array [0,1,0,2,1,0,1,3,2,1,2,1]. In this case, 6 units of rain water (blue section) are being trapped.
 
@@ -347,7 +347,7 @@ Input: head = [3,2,0,-4], pos = 1
 Output: tail connects to node index 1
 Explanation: There is a cycle in the linked list, where tail connects to the second node.
 ```
-![0ac1c374da73504066d5990dc7ea7cbb.png](./res/circularlinkedlist.png)
+![0ac1c374da73504066d5990dc7ea7cbb.png](./res/cover/circularlinkedlist.png)
 
 Example 2:
 ```
@@ -355,7 +355,7 @@ Input: head = [1], pos = -1
 Output: no cycle
 Explanation: There is no cycle in the linked list.
 ```
-![faeeb9031a07904b5fb959efd28ee031.png](./res/circularlinkedlist_test3.png)
+![faeeb9031a07904b5fb959efd28ee031.png](./res/cover/circularlinkedlist_test3.png)
 
 > Follow up:
 > Can you solve it without using extra space?
