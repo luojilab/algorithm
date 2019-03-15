@@ -1,6 +1,6 @@
 ## 排序专题（5）
 1. [归并排序](./doc/Sort/Merge_Sort/readme.md)
-2. 快速排序
+2. [快速排序](./doc/Sort/Quick_Sort/readme.md)
 3. 线性排序
     1. 计数排序
     2. 基数排序
