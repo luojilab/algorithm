@@ -1,4 +1,4 @@
-package arithmetic;
+package Sort.Merge_Sort;
 
 import java.util.Arrays;
 
