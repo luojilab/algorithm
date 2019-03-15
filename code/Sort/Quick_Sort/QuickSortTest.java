@@ -9,8 +9,8 @@ public class QuickSortTest {
                 41, 74, 5, 23, 36, 6, 32, 23, 21, 11, 5, 94, 2, 3, 18, 2, 37, 74, 1, 3, 41,
                 74, 5, 23, 34, 456, 564, 465, 563411, 218, 456, 486, 45, 78, 213, 897, 12, 45, 123, 45, 12, 152, 45857, 3, 2785, 21, 0};
 //        quickSort(arr, 0, arr.length - 1);
-//        quickSort2Way(arr, 0, arr.length - 1);
-        quickSort3Way(arr, 0, arr.length - 1);
+        quickSort2Way(arr, 0, arr.length - 1);
+//        quickSort3Way(arr, 0, arr.length - 1);
         System.out.println(Arrays.toString(arr));
     }
 
@@ -43,7 +43,7 @@ public class QuickSortTest {
                 j++;
             }
         }
-        swap(arr, j, l);
+        swap(arr, l, j);
         return j;
     }
 
@@ -120,8 +120,9 @@ public class QuickSortTest {
             }
         }
         swap(arr, l, lt);
+        lt--;
 
-        quickSort3Way(arr, l, lt - 1);
+        quickSort3Way(arr, l, lt);
         quickSort3Way(arr, gt, r);
     }
 
