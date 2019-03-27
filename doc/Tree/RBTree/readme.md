@@ -65,11 +65,13 @@
 #### Case 3    当前节点的父节点是红色，叔叔节点是黑色，且当前节点是其父节点的左孩子    
 (01) 将“父节点”设为“黑色”。              
 (02) 将“祖父节点”设为“红色”。             
-(03) 以“祖父节点”为支点进行右旋。           haha   
+(03) 以“祖父节点”为支点进行右旋。          
 
 示意图：
 ![Tree](../../../res/Tree/RBTree/insert_case3.jpg)
 
+#### 再来看一下下面的这组图
 
+![Tree](../../../res/Tree/RBTree/case3_left.png)    ![Tree](../../../res/Tree/RBTree/case3_right.png)   
 
 
