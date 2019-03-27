@@ -72,6 +72,8 @@
 
 #### 再来看一下下面的这组图
 
-![Tree](../../../res/Tree/RBTree/case3_left.png)    ![Tree](../../../res/Tree/RBTree/case3_right.png)   
+![Tree](../../../res/Tree/RBTree/case2_left.png)            ![Tree](../../../res/Tree/RBTree/case2_right.png)   
+
+![Tree](../../../res/Tree/RBTree/case3_left.png)            ![Tree](../../../res/Tree/RBTree/case3_right.png)   
 
 
