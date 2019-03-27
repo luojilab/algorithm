@@ -72,8 +72,10 @@
 
 #### 再来看一下下面的这组图
 
-![Tree](../../../res/Tree/RBTree/case2_left.png)            ![Tree](../../../res/Tree/RBTree/case2_right.png)   
+![Tree](../../../res/Tree/RBTree/case2_left.png)                              ![Tree](../../../res/Tree/RBTree/case2_right.png)   
 
-![Tree](../../../res/Tree/RBTree/case3_left.png)            ![Tree](../../../res/Tree/RBTree/case3_right.png)   
+![Tree](../../../res/Tree/RBTree/case3_left.png)                              ![Tree](../../../res/Tree/RBTree/case3_right.png)   
+
+这里需要特别注意的是图1和图2都是属于Case2的情况，图3和图4都是属于Case3的情况
 
 
