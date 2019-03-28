@@ -53,20 +53,20 @@
 (04) 将“祖父节点”设为“当前节点”(红色节点)；即，之后继续对“当前节点”进行操作。  
 
 所以红黑树由之前的：    
-![Tree](../../../res/Tree/RBTree/insert_case1_left.png)   
+![Tree](../../../res/Tree/RBTree/insert_case1_left.png)      
 
 变化成： 
-![Tree](../../../res/Tree/RBTree/insert_case1_right.png)
+![Tree](../../../res/Tree/RBTree/insert_case1_right.png)   
 
 #### Case 2    当前节点的父节点是红色，叔叔节点是黑色，且当前节点是其父节点的右孩子    
 (01) 将“父节点”作为“新的当前节点”。          
 (02) 以“新的当前节点”为支点进行左旋。            
 
 所以红黑树由之前的：      
-![Tree](../../../res/Tree/RBTree/insert_case2_left.png)  
+![Tree](../../../res/Tree/RBTree/insert_case2_left.png)     
 
 变化成： 
-![Tree](../../../res/Tree/RBTree/insert_case2_right.png)
+![Tree](../../../res/Tree/RBTree/insert_case2_right.png)   
 
 #### Case 3    当前节点的父节点是红色，叔叔节点是黑色，且当前节点是其父节点的左孩子    
 (01) 将“父节点”设为“黑色”。              
@@ -74,10 +74,10 @@
 (03) 以“祖父节点”为支点进行右旋。          
 
 所以红黑树由之前的：    
-![Tree](../../../res/Tree/RBTree/insert_case3_left.png)  
+![Tree](../../../res/Tree/RBTree/insert_case3_left.png)     
 
 变化成： 
-![Tree](../../../res/Tree/RBTree/insert_case3_right.png)
+![Tree](../../../res/Tree/RBTree/insert_case3_right.png)   
 
 #### 再来看一下下面的这组图
 
