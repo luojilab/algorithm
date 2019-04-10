@@ -7,15 +7,20 @@
 //
 
 #include <stdio.h>
+#include <stdlib.h>
+
 
 #define RED        0    // 红色节点
 #define BLACK    1    // 黑色节点
 
 #define rb_parent(r)   ((r)->parent)
+#define rb_color(r) ((r)->color)
 #define rb_is_red(r)   ((r)->color==RED)
 #define rb_is_black(r)  ((r)->color==BLACK)
 #define rb_set_black(r)  do { (r)->color = BLACK; } while (0)
 #define rb_set_red(r)  do { (r)->color = RED; } while (0)
+#define rb_set_parent(r,p)  do { (r)->parent = (p); } while (0)
+#define rb_set_color(r,c)  do { (r)->color = (c); } while (0)
 
 
 typedef int Type;
@@ -256,6 +261,202 @@ static void rbtree_insert(RBRoot *root, Node *node)
     
     // 3. 将它重新修正为一颗二叉查找树
     rbtree_insert_fixup(root, node);
+}
+
+/*
+ * 红黑树删除修正函数
+ *
+ * 在从红黑树中删除插入节点之后(红黑树失去平衡)，再调用该函数；
+ * 目的是将它重新塑造成一颗红黑树。
+ *
+ * 参数说明：
+ *     root 红黑树的根
+ *     node 待修正的节点
+ */
+static void rbtree_delete_fixup(RBRoot *root, Node *node, Node *parent)
+{
+    Node *other;
+    
+    while ((!node || rb_is_black(node)) && node != root->node)
+    {
+        if (parent->left == node)
+        {
+            other = parent->right;
+            if (rb_is_red(other))
+            {
+                // Case 1: x的兄弟w是红色的
+                rb_set_black(other);
+                rb_set_red(parent);
+                rbtree_left_rotate(root, parent);
+                other = parent->right;
+            }
+            if ((!other->left || rb_is_black(other->left)) &&
+                (!other->right || rb_is_black(other->right)))
+            {
+                // Case 2: x的兄弟w是黑色，且w的俩个孩子也都是黑色的
+                rb_set_red(other);
+                node = parent;
+                parent = rb_parent(node);
+            }
+            else
+            {
+                if (!other->right || rb_is_black(other->right))
+                {
+                    // Case 3: x的兄弟w是黑色的，并且w的左孩子是红色，右孩子为黑色。
+                    rb_set_black(other->left);
+                    rb_set_red(other);
+                    rbtree_right_rotate(root, other);
+                    other = parent->right;
+                }
+                // Case 4: x的兄弟w是黑色的；并且w的右孩子是红色的，左孩子任意颜色。
+                rb_set_color(other, rb_color(parent));
+                rb_set_black(parent);
+                rb_set_black(other->right);
+                rbtree_left_rotate(root, parent);
+                node = root->node;
+                break;
+            }
+        }
+        else
+        {
+            other = parent->left;
+            if (rb_is_red(other))
+            {
+                // Case 1: x的兄弟w是红色的
+                rb_set_black(other);
+                rb_set_red(parent);
+                rbtree_right_rotate(root, parent);
+                other = parent->left;
+            }
+            if ((!other->left || rb_is_black(other->left)) &&
+                (!other->right || rb_is_black(other->right)))
+            {
+                // Case 2: x的兄弟w是黑色，且w的俩个孩子也都是黑色的
+                rb_set_red(other);
+                node = parent;
+                parent = rb_parent(node);
+            }
+            else
+            {
+                if (!other->left || rb_is_black(other->left))
+                {
+                    // Case 3: x的兄弟w是黑色的，并且w的左孩子是红色，右孩子为黑色。
+                    rb_set_black(other->right);
+                    rb_set_red(other);
+                    rbtree_left_rotate(root, other);
+                    other = parent->left;
+                }
+                // Case 4: x的兄弟w是黑色的；并且w的右孩子是红色的，左孩子任意颜色。
+                rb_set_color(other, rb_color(parent));
+                rb_set_black(parent);
+                rb_set_black(other->left);
+                rbtree_right_rotate(root, parent);
+                node = root->node;
+                break;
+            }
+        }
+    }
+    if (node)
+        rb_set_black(node);
+}
+
+/*
+ * 删除结点
+ *
+ * 参数说明：
+ *     tree 红黑树的根结点
+ *     node 删除的结点
+ */
+void rbtree_delete(RBRoot *root, Node *node)
+{
+    Node *child, *parent;
+    int color;
+    
+    // 被删除节点的"左右孩子都不为空"的情况。
+    if ( (node->left!=NULL) && (node->right!=NULL) )
+    {
+        // 被删节点的后继节点。(称为"取代节点")
+        // 用它来取代"被删节点"的位置，然后再将"被删节点"去掉。
+        Node *replace = node;
+        
+        // 获取后继节点
+        replace = replace->right;
+        while (replace->left != NULL)
+            replace = replace->left;
+        
+        // "node节点"不是根节点(只有根节点不存在父节点)
+        if (rb_parent(node))
+        {
+            if (rb_parent(node)->left == node)
+                rb_parent(node)->left = replace;
+            else
+                rb_parent(node)->right = replace;
+        }
+        else
+            // "node节点"是根节点，更新根节点。
+            root->node = replace;
+        
+        // child是"取代节点"的右孩子，也是需要"调整的节点"。
+        // "取代节点"肯定不存在左孩子！因为它是一个后继节点。
+        child = replace->right;
+        parent = rb_parent(replace);
+        // 保存"取代节点"的颜色
+        color = rb_color(replace);
+        
+        // "被删除节点"是"它的后继节点的父节点"
+        if (parent == node)
+        {
+            parent = replace;
+        }
+        else
+        {
+            // child不为空
+            if (child)
+                rb_set_parent(child, parent);
+            parent->left = child;
+            
+            replace->right = node->right;
+            rb_set_parent(node->right, replace);
+        }
+        
+        replace->parent = node->parent;
+        replace->color = node->color;
+        replace->left = node->left;
+        node->left->parent = replace;
+        
+        if (color == BLACK)
+            rbtree_delete_fixup(root, child, parent);
+        free(node);
+        
+        return ;
+    }
+    
+    if (node->left !=NULL)
+        child = node->left;
+    else
+        child = node->right;
+    
+    parent = node->parent;
+    // 保存"取代节点"的颜色
+    color = node->color;
+    
+    if (child)
+        child->parent = parent;
+    
+    // "node节点"不是根节点
+    if (parent)
+    {
+        if (parent->left == node)
+            parent->left = child;
+        else
+            parent->right = child;
+    }
+    else
+        root->node = child;
+    
+    if (color == BLACK)
+        rbtree_delete_fixup(root, child, parent);
+    free(node);
 }
 
 
