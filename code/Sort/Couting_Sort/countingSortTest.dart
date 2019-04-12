@@ -14,7 +14,7 @@ void main() {
 List<int> countingSort(List<int> list) {
   int max = list[0]; //最大值，优化数组上限
   int min = list[0]; //最小值，优化数组下限
-  for (int i = 0; i < list.length; i++) {
+  for (int i = 1; i < list.length; i++) {
     if (max < list[i]) {
       max = list[i];
     }
