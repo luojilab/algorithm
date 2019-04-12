@@ -15,7 +15,7 @@ List<int> bucketSort(List list) {
   List<int> resultList = new List(list.length);
 
   int max = list[0]; //最大值，算出数组位数
-  for (int i = 0; i < list.length; i++) {
+  for (int i = 1; i < list.length; i++) {
     if (max < list[i]) {
       max = list[i];
     }
