@@ -15,7 +15,7 @@
 5、 对于任意结点而言，其到叶结点树尾端NIL指针的每条路径都包含相同数目的黑结点。                 
 
 红黑树示意图如下：
-![Tree](../../../res/Tree/RBTree/rbTree_demo.jpg)
+![Tree](../../../res/Tree/RBTree/rbTree_demo.png)
 
 
 ### 红黑树的基本实现
