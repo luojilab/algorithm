@@ -2,9 +2,9 @@
 1. [归并排序](./doc/Sort/Merge_Sort/readme.md)
 2. [快速排序](./doc/Sort/Quick_Sort/readme.md)
 3. [线性排序](./doc/Sort/Linear_Sort/readme.md)
-    1. 计数排序
-    2. 基数排序
-    3. 桶排序
+    1. [计数排序](./doc/Sort/Linear_Sort/readme.md#Couting_Sort)
+    2. [基数排序](./doc/Sort/Linear_Sort/readme.md#Radix_Sort)
+    3. [桶排序](./doc/Sort/Linear_Sort/readme.md#Bucket_Sort)
 4. [红黑树](./doc/Tree/RBTree/readme.md)（平衡二叉树）
 5. [B树](./doc/Tree/BTree/readme.md)（平衡二叉树）
 ## 动态规划专题（6）
