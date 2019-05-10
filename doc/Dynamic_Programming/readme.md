@@ -1,9 +1,3 @@
----
-typora-root-url: ..\..\res\Dynamic_Programming
----
-
-
-
 # 动态规划（基本概念）
 
 ## 定义
