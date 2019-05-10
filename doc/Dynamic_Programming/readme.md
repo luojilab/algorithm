@@ -51,7 +51,7 @@
 
 ### 5.策略
 
-在一个多阶段决策过程中，如果各个阶段的决策变量U<sub>k</sub>(X<sub>k</sub>) （k=1，2，…，n）都已确定，则整个过程也就完全确定。称决策序列{U<sub>1</sub>(X<sub>1</sub>),U<sub>2</sub>(X<sub>2</sub>),...,U<sub>n</sub>X<sub>n</sub>}为该过程的一个策略，从阶段k到阶段n的决策序列称为子策略，表示成{U<sub>k</sub>(X<sub>k</sub>),U<sub>k+1</sub>(X<sub>k+1</sub>),...,U<sub>n</sub>X<sub>n</sub>}。如例1中，选取一路线A-B<sub>1</sub>-C<sub>2</sub>-D<sub>2</sub>-E 就是一个策略：
+在一个多阶段决策过程中，如果各个阶段的决策变量U<sub>k</sub>(X<sub>k</sub>) （k=1，2，…，n）都已确定，则整个过程也就完全确定。称决策序列{U<sub>1</sub>(X<sub>1</sub>),U<sub>2</sub>(X<sub>2</sub>),...,U<sub>n</sub>(X<sub>n</sub>)}为该过程的一个策略，从阶段k到阶段n的决策序列称为子策略，表示成{U<sub>k</sub>(X<sub>k</sub>),U<sub>k+1</sub>(X<sub>k+1</sub>),...,U<sub>n</sub>X<sub>n</sub>}。如例1中，选取一路线A-B<sub>1</sub>-C<sub>2</sub>-D<sub>2</sub>-E 就是一个策略：
 
 {U<sub>1</sub>(A)=B<sub>1</sub>,U<sub>2</sub>(B<sub>1</sub>)=C<sub>2</sub>,U<sub>3</sub>(C<sub>2</sub>)=D<sub>2</sub>,U<sub>4</sub>(D<sub>2</sub>)=E}
 
