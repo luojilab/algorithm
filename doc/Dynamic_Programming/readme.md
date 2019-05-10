@@ -47,7 +47,7 @@
 
 ### 4.状态转移方程
 
-# 在多阶段决策过程中，如果给定了k 阶段的状态变量X<sub>k</sub>和决策变量U<sub>k</sub>，则第k+1阶段的状态变量也会随之而确定。也就是说X<sub>k+1</sub>是X<sub>k</sub>和U<sub>k</sub>的函数，这种关系可记为X<sub>k+1</sub> =T(X<sub>k</sub>,U<sub>k</sub> ) 称之为状态转移方程。
+在多阶段决策过程中，如果给定了k 阶段的状态变量X<sub>k</sub>和决策变量U<sub>k</sub>，则第k+1阶段的状态变量也会随之而确定。也就是说X<sub>k+1</sub>是X<sub>k</sub>和U<sub>k</sub>的函数，这种关系可记为X<sub>k+1</sub> =T(X<sub>k</sub>,U<sub>k</sub> ) 称之为状态转移方程。
 
 ### 5.策略
 
@@ -158,20 +158,20 @@ F(n)=F(n-1)+F(n-2) 是阶段与阶段之前的状态转移方程。这是动态�
 **方法一：递归求解**
 
 ```c
-int getClimbingWays(int n){
-    if(n < 1){
-        return 0;
-    }
-    
-    if(n == 1){
-        return 1;
-    }
+int getClimbingWaysRecursive(int n) {
+	if (n < 1) {
+		return 0;
+	}
 
-    if(n == 2){
-        return 2;
-    }
+	if (n == 1) {
+		return 1;
+	}
 
-    return getWAyNum(n-1) + getWAyNum(n-2);
+	if (n == 2) {
+		return 2;
+	}
+
+	return getClimbingWaysRecursive(n - 1) + getClimbingWaysRecursive(n - 2);
 }
 ```
 
@@ -194,26 +194,27 @@ int getClimbingWays(int n){
 **方法二：备忘录算法**
 
 ```
-int getClimbingWays(int n, HashMap<Integer, Integer> map){
-    if(n < 1){
-        return 0;
-    }
-    
-    if(n == 1){
-        return 1;
-    }
+int getClimbingWaysMemo(int n, std::unordered_map<int, int> &map) {
+	if (n < 1) {
+		return 0;
+	}
 
-    if(n == 2){
-        return 2;
-    }
+	if (n == 1) {
+		return 1;
+	}
 
-    if(map.contains(n)){
-        return map.get(n);
-    }else{
-        int value = getWAyNum(n-1, map) + getWAyNum(n-2, map)
-        map.put(n, value);
-        return value;
-    }
+	if (n == 2) {
+		return 2;
+	}
+
+	std::unordered_map<int, int>::iterator iter = map.find(n);
+	if (iter != map.end()) {
+		return iter->second;
+	}else {
+		int value = getClimbingWaysMemo(n - 1, map) + getClimbingWaysMemo(n - 2, map);
+		map[n] = value;
+		return value;
+	}
 }
 ```
 
@@ -254,7 +255,7 @@ F(N)自底向上的求解过程。
 **方法三：动态规划求解**
 
 ```
-int getClimbingWays(int n){
+int getClimbingWaysDynamic(int n){
     if(n < 1){
         return 0;
     }
