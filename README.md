@@ -6,7 +6,7 @@
     2. [基数排序](./doc/Sort/Linear_Sort/readme.md#Radix_Sort)
     3. [桶排序](./doc/Sort/Linear_Sort/readme.md#Bucket_Sort)
 4. [红黑树](./doc/Tree/RBTree/readme.md)（平衡二叉树）
-5. B树（平衡二叉树）
+5. [B树](./doc/Tree/BTree/readme.md)（平衡二叉树）
 ## 动态规划专题（6）
 6. [动态规划](./doc/Dynamic_Programming/readme.md)（基本概念）
 7. 最长公共子序列（动态规划练习题）
