@@ -8,7 +8,7 @@
 4. [红黑树](./doc/Tree/RBTree/readme.md)（平衡二叉树）
 5. [B树](./doc/Tree/BTree/readme.md)（平衡二叉树）
 ## 动态规划专题（6）
-6. 动态规划(./doc/Sort/Dynamic_Programming/readme.md)（基本概念）
+6. [动态规划](./doc/Sort/Dynamic_Programming/readme.md)（基本概念）
 7. 最长公共子序列（动态规划练习题）
 8. 最优二叉搜索树
 9. 0-1背包问题
