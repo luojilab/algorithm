@@ -211,4 +211,4 @@ return e and root;
 
 根据地第三步中得到的root表，可以递推出各个子树的根，从而可以构建出一棵最优二叉查找树。从root[1,n]开始向下递推，一次找出树根，及左子树和右子树。
 
-#### [代码链接](./code/Dynamic_Programming/OptimalBinarySearchTree/optimal_binary_search.java)
+#### [代码链接](../../code/Dynamic_Programming/OptimalBinarySearchTree/optimal_binary_search.java)
