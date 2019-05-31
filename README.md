@@ -11,7 +11,7 @@
 6. [动态规划](./doc/Dynamic_Programming/readme.md)（基本概念）
 7. 最长公共子序列（动态规划练习题）
 8. [最优二叉搜索树](./doc/Dynamic_Programming/optimal_binary_search_tree.md)
-9. 0-1背包问题
+9. [0-1背包问题](./doc/Dynamic_Programming/0-1 knapsack problem.md)
 10. 完全背包问题
 11. 多重背包问题
 
