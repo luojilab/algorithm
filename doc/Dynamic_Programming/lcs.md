@@ -55,12 +55,8 @@
 ​				3.X<sub>i</sub>≠Y<sub>j</sub>,则Z<sub>k</sub>,为X<sub>i</sub>与Y<sub>j-1</sub>的最长公共子序列
 
 ​				依次类推,可推导出公式：
-
-​				$$LCS(i,j)=
-\begin{cases}End& \text{i=-1 or j=-1}\\
-LCS(i-1,j-1)+X_i& \text{Xi=Yi}\\
-Max(LCS(i-1,j),LCS(i,j-1))& \text{Xi≠Yi}
-\end{cases}$$
+			
+<img src="/res/Dynamic_Programming/lcs1.png" width ="70%">
 
 
 
