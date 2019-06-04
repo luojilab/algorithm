@@ -12,19 +12,19 @@
 
 
 
-<img src="https://raw.githubusercontent.com/busymilk/algorithm/master/res/Dynamic_Programming/str1.jpg" width ="30%">
+<img src="/res/Dynamic_Programming/str1.jpg" width ="30%">
 
-<img src="https://raw.githubusercontent.com/busymilk/algorithm/master/res/Dynamic_Programming/str2.jpg" width ="30%">
+<img src="/res/Dynamic_Programming/str2.jpg" width ="30%">
 
-<img src="https://raw.githubusercontent.com/busymilk/algorithm/master/res/Dynamic_Programming/str3.jpg" width ="30%">
+<img src="/res/Dynamic_Programming/str3.jpg" width ="30%">
 
 
 
-<img src="https://raw.githubusercontent.com/busymilk/algorithm/master/res/Dynamic_Programming/str4.jpg" width ="30%">
+<img src="/res/Dynamic_Programming/str4.jpg" width ="30%">
 
-<img src="https://raw.githubusercontent.com/busymilk/algorithm/master/res/Dynamic_Programming/str5.jpg" width ="30%">
+<img src="/res/Dynamic_Programming/str5.jpg" width ="30%">
 
-<img src="https://raw.githubusercontent.com/busymilk/algorithm/master/res/Dynamic_Programming/str6.jpg" width ="30%">
+<img src="/res/Dynamic_Programming/str6.jpg" width ="30%">
 
 ### 2.最长公共子序列应用
 
