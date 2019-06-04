@@ -8,7 +8,7 @@
 
 一个数列![S](https://wikimedia.org/api/rest_v1/media/math/render/svg/4611d85173cd3b508e67077d4a1252c9c05abca2)，如果分别是两个或多个已知[数列](https://www.wikiwand.com/zh-hans/数列)的子序列，且是所有符合此条件序列中最长的，则![S](https://wikimedia.org/api/rest_v1/media/math/render/svg/4611d85173cd3b508e67077d4a1252c9c05abca2)称为已知序列的最长公共子序列
 
-例如：序列<A,B,C,B,A>，<A,B,B,A,C>,则可以有子序列<A,B>,<A,B,B>,<A,B,B,A>,其中<A,B,B,A>就是这两个序列中最长的公共子序列
+例如：序列<A,B,C,B,A>，<A,B,B,A,C>,则可以有子序列<A,B>,<A,B,B>,<A,B,B,A>,其中<A,B,B,A>就是这两个序列中最长的公共子序列
 
 
 
