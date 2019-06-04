@@ -64,5 +64,5 @@ Max(LCS(i-1,j),LCS(i,j-1))& \text{Xi≠Yi}
 
 
 
-​			[参考实现](/blob/master/code/LCS/Main.groovy)
+​			[参考实现](/code/LCS/Main.groovy)
 
