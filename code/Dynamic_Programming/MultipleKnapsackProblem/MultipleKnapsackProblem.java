@@ -27,12 +27,14 @@ public class MultipleKnapsackProblem {
             for (int j = 1; j <= W; j++) {
                 if (j < weights[i - 1]) {
                     results[i][j] = results[i - 1][j];
-                } else
+                } else {
                     for (int k = 0; k <= numbers[i - 1] && k * weights[i - 1] <= j; k++) {
                         int temp = results[i - 1][j - k * weights[i - 1]] + k * values[i - 1];
-                        if (temp > results[i][j])
+                        if (temp > results[i][j]) {
                             results[i][j] = temp;
+                        }
                     }
+                }
                 System.out.print(results[i][j] + " ");
             }
             System.out.println();
@@ -44,6 +46,7 @@ public class MultipleKnapsackProblem {
 
     /**
      * 递归
+     *
      * @param i
      * @param j
      * @return
