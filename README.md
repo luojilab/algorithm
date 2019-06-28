@@ -13,7 +13,7 @@
 8. [最优二叉搜索树](./doc/Dynamic_Programming/optimal_binary_search_tree.md)
 9. [0-1背包问题](./doc/Dynamic_Programming/0-1_knapsack_problem.md)
 10. [完全背包问题](./doc/Dynamic_Programming/complete_knapsack_problem.md)
-11. 多重背包问题
+11. [多重背包问题](./doc/Dynamic_Programming/multiple_knapsack_problem.md)
 
 ## 贪心算法专题（2）
 12. 贪心算法
