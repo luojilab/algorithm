@@ -16,7 +16,7 @@
 11. [多重背包问题](./doc/Dynamic_Programming/multiple_knapsack_problem.md)
 
 ## 贪心算法专题（2）
-12. 贪心算法
+12. [贪心算法](./doc/GreedyAlgorithm/greedy_algorithms.md)
 13. 贪心算法与动态规划问题的对比
 
 ## 字符串查找算法（4）
