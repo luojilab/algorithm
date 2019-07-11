@@ -17,7 +17,7 @@
 
 ## 贪心算法专题（2）
 12. [贪心算法](./doc/GreedyAlgorithm/greedy_algorithms.md)
-13. 贪心算法与动态规划问题的对比
+13. [贪心算法与动态规划问题的对比](./doc/Dynamic_Programming/summary.md)
 
 ## 字符串查找算法（4）
 14. 朴素字符串匹配算法
