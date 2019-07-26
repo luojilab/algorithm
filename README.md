@@ -415,86 +415,11 @@ Note:
 You can assume that you can always reach the last index.
 ```
 
-53. 【**Word Break II**】Given a non-empty string s and a dictionary wordDict containing a list of non-empty words, add spaces in s to construct a sentence where each word is a valid dictionary word. Return all such possible sentences.
-
-Note:
-
-* The same word in the dictionary may be reused multiple times in the segmentation.
-* You may assume the dictionary does not contain duplicate words.
-* 
-Example 1:
-```
-Input:
-s = "catsanddog"
-wordDict = ["cat", "cats", "and", "sand", "dog"]
-Output:
-[
-  "cats and dog",
-  "cat sand dog"
-]
-```
-Example 2:
-```
-Input:
-s = "pineapplepenapple"
-wordDict = ["apple", "pen", "applepen", "pine", "pineapple"]
-Output:
-[
-  "pine apple pen apple",
-  "pineapple pen apple",
-  "pine applepen apple"
-]
-Explanation: Note that you are allowed to reuse a dictionary word.
-```
-Example 3:
-```
-Input:
-s = "catsandog"
-wordDict = ["cats", "dog", "sand", "and", "cat"]
-Output:
-[]
-```
-
-54. 【**Poor Pigs**】There are 1000 buckets, one and only one of them is poisonous, while the rest are filled with water. They all look identical. If a pig drinks the poison it will die within 15 minutes. What is the minimum amount of pigs you need to figure out which bucket is poisonous within one hour?
-
-Answer this question, and write an algorithm for the general case.
-
-##### General case:
-
-If there are n buckets and a pig drinking poison will die within m minutes, how many pigs (x) you need to figure out the poisonous bucket within p minutes? There is exactly one bucket with poison.
-
-##### Note:
-```
-A pig can be allowed to drink simultaneously on as many buckets as one would like, and the feeding takes no time.
-After a pig has instantly finished drinking buckets, there has to be a cool down time of m minutes. During this time, only observation is allowed and no feedings at all.
-Any given bucket can be sampled an infinite number of times (by an unlimited number of pigs).
-```
-55. 【**Smallest Range**】 You have k lists of sorted integers in ascending order. Find the smallest range that includes at least one number from each of the k lists.
-
-We define the range [a,b] is smaller than range [c,d] if b-a < d-c or a < c if b-a == d-c.
-
-Example 1:
-```
-Input:[[4,10,15,24,26], [0,9,12,20], [5,18,22,30]]
-Output: [20,24]
-Explanation: 
-List 1: [4, 10, 15, 24,26], 24 is in range [20,24].
-List 2: [0, 9, 12, 20], 20 is in range [20,24].
-List 3: [5, 18, 22, 30], 22 is in range [20,24].
-```
-
-Note:
-1. The given list may contain duplicates, so ascending order means >= here.
-2. 1 <= k <= 3500
-3. -105 <= value of elements <= 105.
-4. For Java users, please note that the input type has been changed to List<List<Integer>>. And after you reset the code template, you'll see this point.
-
-
 ## 哈希算法专题
-56. Cyclic redundancy checks
-57. cryptographic hash functions：mdX
-58. cryptographic hash functions：SHA-X
+53. Cyclic redundancy checks
+54. cryptographic hash functions：mdX
+55. cryptographic hash functions：SHA-X
 
 ## 加密算法专题
-59. AES
-60. RSA
+56. AES
+57. RSA
