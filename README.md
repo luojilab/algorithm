@@ -375,30 +375,30 @@ Explanation: There is no cycle in the linked list.
 
 
 
-51. 【Find the Duplicate Number】Given an array *nums* containing *n* + 1 integers where each integer is between 1 and *n* (inclusive), prove that at least one duplicate number must exist. Assume that there is only one duplicate number, find the duplicate one.
+51. 【**Find the Duplicate Number**】Given an array *nums* containing *n* + 1 integers where each integer is between 1 and *n* (inclusive), prove that at least one duplicate number must exist. Assume that there is only one duplicate number, find the duplicate one.
 
-    **Example 1:**
+**Example 1:**
 
 ```
     Input: [1,3,4,2,2]
     Output: 2
 ```
 
-    **Example 2:**
+**Example 2:**
 
 ```
     Input: [3,1,3,4,2]
     Output: 3
 ```
 
-    **Note:**
+**Note:**
     
     1. You **must not** modify the array (assume the array is read only).
     2. You must use only constant, *O*(1) extra space.
     3. Your runtime complexity should be less than *O*(*n*2).
     4. There is only one duplicate number in the array, but it could be repeated more than once.
 
-52. 【Jump Game II】Given an array of non-negative integers, you are initially positioned at the first index of the array.
+52. 【**Jump Game II**】Given an array of non-negative integers, you are initially positioned at the first index of the array.
 Each element in the array represents your maximum jump length at that position.
 Your goal is to reach the last index in the minimum number of jumps.
 
@@ -415,7 +415,7 @@ Note:
 You can assume that you can always reach the last index.
 ```
 
-53. 【Word Break II】Given a non-empty string s and a dictionary wordDict containing a list of non-empty words, add spaces in s to construct a sentence where each word is a valid dictionary word. Return all such possible sentences.
+53. 【**Word Break II**】Given a non-empty string s and a dictionary wordDict containing a list of non-empty words, add spaces in s to construct a sentence where each word is a valid dictionary word. Return all such possible sentences.
 
 Note:
 
@@ -455,7 +455,7 @@ Output:
 []
 ```
 
-54. 【Poor Pigs】There are 1000 buckets, one and only one of them is poisonous, while the rest are filled with water. They all look identical. If a pig drinks the poison it will die within 15 minutes. What is the minimum amount of pigs you need to figure out which bucket is poisonous within one hour?
+54. 【**Poor Pigs**】There are 1000 buckets, one and only one of them is poisonous, while the rest are filled with water. They all look identical. If a pig drinks the poison it will die within 15 minutes. What is the minimum amount of pigs you need to figure out which bucket is poisonous within one hour?
 
 Answer this question, and write an algorithm for the general case.
 
@@ -469,7 +469,7 @@ A pig can be allowed to drink simultaneously on as many buckets as one would lik
 After a pig has instantly finished drinking buckets, there has to be a cool down time of m minutes. During this time, only observation is allowed and no feedings at all.
 Any given bucket can be sampled an infinite number of times (by an unlimited number of pigs).
 ```
-55. 【Smallest Range】 You have k lists of sorted integers in ascending order. Find the smallest range that includes at least one number from each of the k lists.
+55. 【**Smallest Range**】 You have k lists of sorted integers in ascending order. Find the smallest range that includes at least one number from each of the k lists.
 
 We define the range [a,b] is smaller than range [c,d] if b-a < d-c or a < c if b-a == d-c.
 
