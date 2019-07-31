@@ -21,7 +21,7 @@
 
 ## 字符串查找算法（4）
 14. [朴素字符串匹配算法](./doc/String/naive-string-matching-algorithm/BF.md)
-15. Rabin-Karp算法
+15. [Rabin-Karp算法](./doc/String/Rabin-Karp/ReadMe.md)
 16. 利用有限自动机进行字符串匹配
 17. KMP算法图算法
 
