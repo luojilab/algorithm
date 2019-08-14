@@ -4,25 +4,25 @@
 
 让我们首先从「柯尼斯堡（Knigsberg）的七座桥」开始。在加里宁格勒（Kaliningrad）有七座桥，连接着由普雷戈里亚（Pregolya）河分割而成的两个岛屿和两大陆地。
 
-在 18 世纪，这里被称为柯尼斯堡，隶属普鲁士，这一区域有很多桥。当时，有一个与柯尼斯堡的桥相关的脑筋急转弯：**如何只穿过桥一次而穿过整个城市？**![u=2152622769,2111200387&fm=173&app=25&f=JPEG](/Users/luojilab/Downloads/u=2152622769,2111200387&fm=173&app=25&f=JPEG.jpeg)
+在 18 世纪，这里被称为柯尼斯堡，隶属普鲁士，这一区域有很多桥。当时，有一个与柯尼斯堡的桥相关的脑筋急转弯：**如何只穿过桥一次而穿过整个城市？**
 
-
+![](../../res/Graph/Concept/graph01.jpg)
 
 去掉一座桥：
 
 
 
-![u=368814235,502013907&fm=173&app=25&f=JPEG](/Users/luojilab/Downloads/u=368814235,502013907&fm=173&app=25&f=JPEG.jpeg)
+![](../../res/Graph/Concept/graph02.jpg)
 
 添加一座桥：
 
-![u=2469290062,3127794347&fm=173&app=25&f=JPEG](/Users/luojilab/Downloads/u=2469290062,3127794347&fm=173&app=25&f=JPEG.jpeg)
+![](../../res/Graph/Concept/graph03.jpg)
 
 
 
 抽象模型：
 
-![u=2251386813,3403242335&fm=26&gp=0.jpg](/Users/luojilab/Downloads/u=2251386813,3403242335&fm=26&gp=0.jpg.png)
+![](../../res/Graph/Concept/graph04.png)
 
 
 
@@ -44,7 +44,7 @@
 一组边 E⊆V×V
 如：边 (i,j) ∈ E 连接了节点 i 和 j
 
-![2018090423132222-2](/Users/luojilab/Downloads/2018090423132222-2.png)
+![](../../res/Graph/Concept/graph05.png)
 
 
 
@@ -94,7 +94,7 @@
 
 
 
-![20180905111831161](/Users/luojilab/Downloads/20180905111831161.png)
+![](../../res/Graph/Concept/graph06.png)
 
 有向图
 
