@@ -6,23 +6,23 @@
 
 在 18 世纪，这里被称为柯尼斯堡，隶属普鲁士，这一区域有很多桥。当时，有一个与柯尼斯堡的桥相关的脑筋急转弯：**如何只穿过桥一次而穿过整个城市？**
 
-![](../../res/Graph/Concept/graph01.jpg)
+![](../../../res/Graph/Concept/graph01.jpeg)
 
 去掉一座桥：
 
 
 
-![](../../res/Graph/Concept/graph02.jpg)
+![](../../../res/Graph/Concept/graph02.jpeg)
 
 添加一座桥：
 
-![](../../res/Graph/Concept/graph03.jpg)
+![](../../../res/Graph/Concept/graph03.jpeg)
 
 
 
 抽象模型：
 
-![](../../res/Graph/Concept/graph04.png)
+![](../../../res/Graph/Concept/graph04.png)
 
 
 
@@ -44,7 +44,7 @@
 一组边 E⊆V×V
 如：边 (i,j) ∈ E 连接了节点 i 和 j
 
-![](../../res/Graph/Concept/graph05.png)
+![](../../../res/Graph/Concept/graph05.jpg)
 
 
 
@@ -94,7 +94,7 @@
 
 
 
-![](../../res/Graph/Concept/graph06.png)
+![](../../../res/Graph/Concept/graph06.png)
 
 有向图
 
