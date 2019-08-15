@@ -20,8 +20,8 @@
 13. [贪心算法与动态规划问题的对比](./doc/Dynamic_Programming/summary.md)
 
 ## 字符串查找算法（4）
-14. 朴素字符串匹配算法
-15. Rabin-Karp算法
+14. [朴素字符串匹配算法](./doc/String/naive-string-matching-algorithm/BF.md)
+15. [Rabin-Karp算法](./doc/String/Rabin-Karp/ReadMe.md)
 16. 利用有限自动机进行字符串匹配
 17. KMP算法图算法
 
@@ -36,12 +36,22 @@
 23. 动态多线程基础 + 案例
 
 ## Leetcode 算法
-24. ***【Add Two Numbers】*** 给两个非空数组单向链表，代表两个非负整数。数字在链表中的存储是逆序的（如，对于123在链表中的存储是3-&gt;2-&gt;1），将两个链表相加输出结果。结果也为链表
+24. ***【Remove Nth Node From End of List】***  Given a linked list, remove the n-th node from the end of list and return its head.
 
+Example:
 ```
-Input: (2-> 4 -> 3) + (5 -> 6 -> 4)
-Output: (7 -> 0 -> 8)
-Explanation: 342 + 465 = 807.
+		Given linked list: 1->2->3->4->5, and n = 2.
+
+		After removing the second node from the end, the linked list becomes 1->2->3->5.
+```
+Note:
+```
+	Given n will always be valid.
+```
+
+Follow up:
+```
+	Could you do this in one pass?
 ```
 25. ***【Longest Substring Without Repeating Characters】*** 给定一个字符串，找到最长的没有重复字符的子串. 
 26. ***【Longest Palindromic Substring】*** 给定一个字符串，找到最长的回文子串
@@ -72,19 +82,16 @@ Input :[2,3,6,7], target=7, A solution set is:
 ]
 ```
 
-31. ***【Permutations】*** 给定一个不同元素的数组，输出所有可能的组合
+31. ***【Permutations II】*** Given a collection of numbers that might contain duplicates, return all possible unique permutations.
 Example:
 ```
-Input: [1,2,3]
-Output:
-[
-  [1,2,3],
-  [1,3,2],
-  [2,1,3],
-  [2,3,1],
-  [3,1,2],
-  [3,2,1]
-]
+		Input: [1,1,2]
+		Output:
+		[
+		  [1,1,2],
+		  [1,2,1],
+		  [2,1,1]
+		]
 ```
 
 32. ***【Merge Intervals】*** 给定区间的组合，然后合并相互覆盖的区间。输出结果
@@ -212,25 +219,20 @@ cache.get(3);       // returns 3
 cache.get(4);       // returns 4
 ```
 
-43. ***【Climbing Stairs】*** You are climbing a stair case. It takes n steps to reach to the top.
+43. ***【Longest Valid Parentheses】*** Given a string containing just the characters '(' and ')', find the length of the longest valid (well-formed) parentheses substring.
 Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
 Note: Given n will be a positive integer.
 Example 1:
-```
-Input: 2
-Output: 2
-Explanation: There are two ways to climb to the top.
-1. 1 step + 1 step
-2. 2 steps
+```	
+	Input: "(()"
+	Output: 2
+	Explanation: The longest valid parentheses substring is "()"
 ```
 Example 2:
 ```
-Input: 3
-Output: 3
-Explanation: There are three ways to climb to the top.
-1. 1 step + 1 step + 1 step
-2. 1 step + 2 steps
-3. 2 steps + 1 step
+	Input: ")()())"
+	Output: 4
+	Explanation: The longest valid parentheses substring is "()()"
 ```
 
 44. ***【Best Time to Buy and Sell Stock】*** Say you have an array for which the ith element is the price of a given stock on day i.
@@ -323,17 +325,28 @@ Input:
 Output: 4
 ```
 
-49. ***【Coin Change】*** You are given coins of different denominations and a total amount of money amount. Write a function to compute the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return -1.
+49. ***【Word Search II】***  Given a 2D board and a list of words from the dictionary, find all words in the board.
+	
+
+Each word must be constructed from letters of sequentially adjacent cell, where "adjacent" cells are those horizontally or 	vertically neighboring. The same letter cell may not be used more than once in a word.
+
 Example 1:
 ```
-Input: coins = [1, 2, 5], amount = 11
-Output: 3 
-Explanation: 11 = 5 + 5 + 1
+Input: 
+	board = [
+	  ['o','a','a','n'],
+	  ['e','t','a','e'],
+	  ['i','h','k','r'],
+	  ['i','f','l','v']
+	]
+words = ["oath","pea","eat","rain"]
+	
+Output: ["eat","oath"]
 ```
-Example 2:
+Note:
 ```
-Input: coins = [2], amount = 3
-Output: -1
+All inputs are consist of lowercase letters a-z.
+The values of words are distinct.
 ```
 
 50. ***【Linked List Cycle II】*** Given a linked list, return the node where the cycle begins. If there is no cycle, return null.
@@ -362,26 +375,51 @@ Explanation: There is no cycle in the linked list.
 
 
 
-51. 【Find the Duplicate Number】Given an array *nums* containing *n* + 1 integers where each integer is between 1 and *n* (inclusive), prove that at least one duplicate number must exist. Assume that there is only one duplicate number, find the duplicate one.
+51. 【**Find the Duplicate Number**】Given an array *nums* containing *n* + 1 integers where each integer is between 1 and *n* (inclusive), prove that at least one duplicate number must exist. Assume that there is only one duplicate number, find the duplicate one.
 
-    **Example 1:**
+**Example 1:**
 
-    ```
+```
     Input: [1,3,4,2,2]
     Output: 2
-    ```
+```
 
-    **Example 2:**
+**Example 2:**
 
-    ```
+```
     Input: [3,1,3,4,2]
     Output: 3
-    ```
+```
 
-    **Note:**
-
+**Note:**
+    
     1. You **must not** modify the array (assume the array is read only).
     2. You must use only constant, *O*(1) extra space.
     3. Your runtime complexity should be less than *O*(*n*2).
     4. There is only one duplicate number in the array, but it could be repeated more than once.
 
+52. 【**Jump Game II**】Given an array of non-negative integers, you are initially positioned at the first index of the array.
+Each element in the array represents your maximum jump length at that position.
+Your goal is to reach the last index in the minimum number of jumps.
+
+Example:
+```
+Input: [2,3,1,1,4]
+Output: 2
+Explanation: The minimum number of jumps to reach the last index is 2.
+    Jump 1 step from index 0 to 1, then 3 steps to the last index.
+```
+
+Note:
+```
+You can assume that you can always reach the last index.
+```
+
+## 哈希算法专题
+53. Cyclic redundancy checks
+54. cryptographic hash functions：mdX
+55. cryptographic hash functions：SHA-X
+
+## 加密算法专题
+56. AES
+57. RSA
