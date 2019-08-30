@@ -6,7 +6,7 @@
 
 ## 举例
 
-![demo_0](/Users/jinjiahui/Documents/document/得到/每周一算法/img/demo_0.png)
+![demo_0](./img/demo_0.png)
 
 以上图为例，计算点A到点C的最短路径。
 
@@ -14,43 +14,43 @@
 
 ​	
 
-![demo_1](/Users/jinjiahui/Documents/document/得到/每周一算法/img/demo_1.png)
+![demo_1](./img/demo_1.png)
 
 Vistied存放已求出的最短路径的点，Unvisited存放未求出最短路径的点，表格记录改点到点A的最短距离及经过的点。
 
-![demo_2](/Users/jinjiahui/Documents/document/得到/每周一算法/img/demo_2.png)
+![demo_2](./img/demo_2.png)
 
 首先对数据进行初始化，点A到他自身的距离定义为0，点A到其他点的距离定义为正无穷。
 
-![demo_3](/Users/jinjiahui/Documents/document/得到/每周一算法/img/demo_3.png)
+![demo_3](./img/demo_3.png)
 
 首先，我们检查一下点A的邻接点（和点A共享一条边的点），点B和点D，计算每个邻接点和起点的距离。
 
-![demo_4](/Users/jinjiahui/Documents/document/得到/每周一算法/img/demo_4.png)
+![demo_4](./img/demo_4.png)
 
 计算点A到相邻点的距离，并与表格中的数据进行比较，小于的话就更新表中的数据。
 
-![demo_5](/Users/jinjiahui/Documents/document/得到/每周一算法/img/demo_5.png)
+![demo_5](./img/demo_5.png)
 
 接下来分别计算点D的到邻接点点B和点E的距离。
 
-![demo_6](/Users/jinjiahui/Documents/document/得到/每周一算法/img/demo_6.png)
+![demo_6](./img/demo_6.png)
 
 更新表格和数组中数据。
 
-![demo_7](/Users/jinjiahui/Documents/document/得到/每周一算法/img/demo_7.png)
+![demo_7](./img/demo_7.png)
 
 计算点E的到邻接点点B和点C的距离。
 
-![demo_8](/Users/jinjiahui/Documents/document/得到/每周一算法/img/demo_8.png)
+![demo_8](./img/demo_8.png)
 
 更新表格和数组中数据。
 
-![demo_9](/Users/jinjiahui/Documents/document/得到/每周一算法/img/demo_9.png)
+![demo_9](./img/demo_9.png)
 
 计算点B的到邻接点的距离，因为到点B的距离已经计算过了，这里只计算到点C的距离，这里因为8>7，所以不需要更新数据。
 
-![demo_end](/Users/jinjiahui/Documents/document/得到/每周一算法/img/demo_end.png)
+![demo_end](./img/demo_end.png)
 
 点C已经没有没计算过的邻接点了，所以我们只用把C加入已访问列表里。
 
