@@ -28,7 +28,7 @@
 ## 图的算法（5）
 18. [图的基本概念](./doc/Graph/Basic/Concept.md)
 19. [单源最短路径](./doc/Drawable/DrawableShortPath.md)
-20. Dijkstra算法
+20. [Dijkstra算法](./doc/Graph/Dijkstra/Dijkstra算法.md)
 21. 所有结点对的最短路径问题
 22. 最大流
 
