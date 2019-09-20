@@ -30,7 +30,7 @@
 19. [单源最短路径](./doc/Drawable/DrawableShortPath.md)
 20. [Dijkstra算法](./doc/Graph/Dijkstra/Dijkstra算法.md)
 21. [所有结点对的最短路径问题](./doc/Graph/Floyd-Warshall/Floyd-Warshall.md)
-22. 最大流
+22. [最大流](./doc/Graph/MaximumFlow/MaximumFlow.md)
 
 ## 多线程算法（1）
 23. 动态多线程基础 + 案例
