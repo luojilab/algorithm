@@ -24,15 +24,15 @@ f(u, v)为从结点u到结点v的流。
 
 2）**流量守恒**：对于所有的结点u ∈ V-{s, t}，要求
 
-$ \sum_{v ∈ V} f(u, v) = \sum_{v ∈ V} f(v, u)$
+![Tree](../../../res/Graph/MaximumFlow/maximum_flow_10.png) 
 
 当(u, v) ∉ E时，从结点u到结点v之间没有流，因此f(u, v) = 0
 
-### 3、流的值 $$ |f| $$
+### 3、流的值 ![Tree](../../../res/Graph/MaximumFlow/maximum_flow_11.png) 
 
-一个流f的值$|f|$定义如下：
+一个流f的值![Tree](../../../res/Graph/MaximumFlow/maximum_flow_11.png)定义如下：
 
-$ |f| = \sum_{v ∈ V} f(s, v) - \sum_{v ∈ V} f(v, s)$
+![Tree](../../../res/Graph/MaximumFlow/maximum_flow_12.png)
 
 流f的值是从源结点流程的总流量减去流入源结点的总流量。通常，一个流网络不会有任何进入源结点的边。也即后面的项为0.
 这里将其包含进来时为了讨论后面的残存网络。
@@ -74,7 +74,7 @@ return f
 
 图a是一个流网络，b是a对应的残存网络，注意每条边上的值，残存网络中针对每条正向边计算出该条边在存在流的情况下的剩余容量，并画出一条反向边，反向边的容量即是发出流的大小，方便将发出的流运输回发送地，并将权重为0的边省略。
 
-残存网络是如何增大原始流网络中的流的一种指示。如果f是G的一个流，对应的有一个残存网络，残存网络中我们可以定义一个流$f`$。此时我们可以定义一个函数$f ↑ f`$，我们将其称作流$f`$对f的增量（augmentation）
+残存网络是如何增大原始流网络中的流的一种指示。如果f是G的一个流，对应的有一个残存网络，残存网络中我们可以定义一个流![Tree](../../../res/Graph/MaximumFlow/maximum_flow_13.png)。此时我们可以定义一个函数![Tree](../../../res/Graph/MaximumFlow/maximum_flow_14.png) ↑ ![Tree](../../../res/Graph/MaximumFlow/maximum_flow_13.png)，我们将其称作流![Tree](../../../res/Graph/MaximumFlow/maximum_flow_13.png)对f的增量（augmentation）
 
 ![Tree](../../../res/Graph/MaximumFlow/maximum_flow_3.png)
 
@@ -87,9 +87,9 @@ return f
 
 ![Tree](../../../res/Graph/MaximumFlow/maximum_flow_4.png)
 
-其中是$fp$残存网络中的一个流，其值$|fp| = cf(p) > 0$。
+其中是![Tree](../../../res/Graph/MaximumFlow/maximum_flow_15.png)残存网络中的一个流，其值![Tree](../../../res/Graph/MaximumFlow/maximum_flow_16.png)。
 
-推论 设G为一个流网络，设f为G中的一个流，设p为残存网络中的一条增广路径。设$fp$如上述引理所定义，假定将f增加$fp$的量，则函数$f ↑ fp$是图G中的一个流，其值为$|f ↑ fp| = |f| +|fp| > |f|$。
+推论 设G为一个流网络，设f为G中的一个流，设p为残存网络中的一条增广路径。设![Tree](../../../res/Graph/MaximumFlow/maximum_flow_15.png)如上述引理所定义，假定将f增加![Tree](../../../res/Graph/MaximumFlow/maximum_flow_15.png)的量，则函数![Tree](../../../res/Graph/MaximumFlow/maximum_flow_14.png) ↑ ![Tree](../../../res/Graph/MaximumFlow/maximum_flow_15.png) 是图G中的一个流，其值为![Tree](../../../res/Graph/MaximumFlow/maximum_flow_17.png)。
 
 ### 3、流网络的切割（cuts of networks）
 
@@ -111,7 +111,7 @@ return f
 
 ![Tree](../../../res/Graph/MaximumFlow/maximum_flow_8.png)
 
-***引理*** 设f为流网络G的一个流，该流网络的源结点为s，汇点为t，设（S，T）为流网络G的任意切割，则横跨切割（S，T）的净流量为$ f(S,T) = |f|$
+***引理*** 设f为流网络G的一个流，该流网络的源结点为s，汇点为t，设（S，T）为流网络G的任意切割，则横跨切割（S，T）的净流量为![Tree](../../../res/Graph/MaximumFlow/maximum_flow_18.png)
 
 推论 流网络G中任意流f的值不能超过G的任意切割的容量。
 
