@@ -61,7 +61,7 @@ public ListNode removeNthFromEnd(ListNode head, int n) {
 ```  
  
 ### 方案二：快慢指针
-####概述
+#### 概述
 基于快慢指针，要删除第n个节点，可以设置一个快指针fast，让它先移动n步（此时在第n-1个节点），然后再设置一个慢指针从头开始，和快指针以相同速度前进，当快指针走到最后一个节点，慢指针恰好走到第n-1个节点，要删除第n个节点，直接令slow.next = slow.next.next即可，这里假设是第n-1个节点必定存在。
 #### 画图：
 
@@ -88,6 +88,7 @@ public ListNode removeNthFromEnd(ListNode head, int n) {
 ```   
 
 
+#### 复杂度 
 这两种方法的时间复杂度和空间复杂度：
 时间复杂度：O(L)
 空间复杂度：O(1)
