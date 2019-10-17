@@ -31,7 +31,7 @@ Leetcode 算法
 
 画图：
   
-  ![](../../res/Leetcode24/1.png)
+  ![](../../res/Leetcode24/1.jpg)
 
 代码：
 
