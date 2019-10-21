@@ -36,7 +36,7 @@
 23. 动态多线程基础 + 案例
 
 ## Leetcode 算法
-24. ***【Remove Nth Node From End of List】***  Given a linked list, remove the n-th node from the end of list and return its head.
+24. [***【Remove Nth Node From End of List】***  Given a linked list, remove the n-th node from the end of list and return its head.](./doc/Leetcode24/leetcode-24.md)
 
 Example:
 ```
