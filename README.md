@@ -33,10 +33,10 @@
 22. [最大流](./doc/Graph/MaximumFlow/MaximumFlow.md)
 
 ## 多线程算法（1）
-23. 动态多线程基础 + 案例
+23. [动态多线程基础 + 案例](./doc/Multithreading/动态多线程算法.md)
 
 ## Leetcode 算法
-24. [***【Remove Nth Node From End of List】***  Given a linked list, remove the n-th node from the end of list and return its head.](./doc/Leetcode24/leetcode-24.md)
+24. [***【Remove Nth Node From End of List】***](./doc/Leetcode24/leetcode-24.md)  Given a linked list, remove the n-th node from the end of list and return its head.
 
 Example:
 ```
