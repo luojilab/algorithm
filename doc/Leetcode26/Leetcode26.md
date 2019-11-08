@@ -48,9 +48,9 @@ func longestPalindrome(_ string: String) -> String {
 }
 ```
 
-时间复杂度是O(n3)
+时间复杂度是<a href="https://www.codecogs.com/eqnedit.php?latex=O(n^3)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?O(n^3)" title="O(n^3)" /></a>
 
-空间复杂度是O(1)
+空间复杂度是<a href="https://www.codecogs.com/eqnedit.php?latex=O(1)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?O(1)" title="O(1)" /></a>
 
 ### 解法二：最长公共子串
 
@@ -155,40 +155,37 @@ func longestPalindrome(_ string: String) -> String {
 }
 ```
 
-时间复杂度：两层循环O(n2)。
+时间复杂度：两层循环<a href="https://www.codecogs.com/eqnedit.php?latex=O(n^2)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?O(n^2)" title="O(n^2)" /></a>。
 
-空间复杂度：一个二维数组O(n2)。
+空间复杂度：一个二维数组<a href="https://www.codecogs.com/eqnedit.php?latex=O(n^2)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?O(n^2)" title="O(n^2)" /></a>。
 
 ### 解法三：动态规划
 
 为了改进暴力法，我们首先观察如何避免在验证回文时进行不必要的重复计算。考虑`ababa`这个示例。如果我们已经知道 `bab`是回文，那么很明显`ababa`一定是回文，因为它的左首字母和右尾字母是相同的。
 
-我们给出P(i,j)​的定义如下：
-
+我们给出<a href="https://www.codecogs.com/eqnedit.php?latex=P(i,j)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P(i,j)" title="P(i,j)" /></a>的定义如下：
 ![p_def](./img/p_def.png)
 因此，
-
 ![p_1](./img/p_1.png)
-所以如果我们想知道 P（i,j）的情况，不需要调用判断回文串的函数了，只需要知道P（i + 1，j - 1）的情况就可以了，这样时间复杂度就少了O(n)。因此我们可以用动态规划的方法，空间换时间，把已经求出的P（i,j）存储起来。
+所以如果我们想知道<a href="https://www.codecogs.com/eqnedit.php?latex=P(i,j)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P(i,j)" title="P(i,j)" /></a>的情况，不需要调用判断回文串的函数了，只需要知道<a href="https://www.codecogs.com/eqnedit.php?latex=P(i&space;&plus;&space;1,j&space;-&space;1)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P(i&space;&plus;&space;1,j&space;-&space;1)" title="P(i + 1,j - 1)" /></a>的情况就可以了，这样时间复杂度就少了<a href="https://www.codecogs.com/eqnedit.php?latex=O(n)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?O(n)" title="O(n)" /></a>。因此我们可以用动态规划的方法，空间换时间，把已经求出的<a href="https://www.codecogs.com/eqnedit.php?latex=P(i,j)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P(i,j)" title="P(i,j)" /></a>存储起来。
 
 ![image.png](./img/dynamicProgramming-1.png)
 
-如果S[i+1,j-1]是回文串，那么只要 S[ i ] == S[ j ]，就可以确定S[i,j]也是回文串了。
+如果<a href="https://www.codecogs.com/eqnedit.php?latex=S[i&plus;1,j-1]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?S[i&plus;1,j-1]" title="S[i+1,j-1]" /></a>是回文串，那么只要 <a href="https://www.codecogs.com/eqnedit.php?latex=S[&space;i&space;]==S[&space;j&space;]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?S[&space;i&space;]==S[&space;j&space;]" title="S[ i ]==S[ j ]" /></a>，就可以确定<a href="https://www.codecogs.com/eqnedit.php?latex=S[i,j]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?S[i,j]" title="S[i,j]" /></a>也是回文串了。
 
-事实上，当S[i] == S[j]成立的时候，P(i,j)的值由P（i + 1，j - 1）决定，这一点也不难思考：当左右边界字符串相等的时候，整个字符串是否是回文就完全由“原字符串去掉左右边界”的子串是否回文决定。但是这里还需要再多考虑一点点：“原字符串去掉左右边界”的子串的边界情况。
+事实上，当<a href="https://www.codecogs.com/eqnedit.php?latex=S[&space;i&space;]==S[&space;j&space;]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?S[&space;i&space;]==S[&space;j&space;]" title="S[ i ]==S[ j ]" /></a>成立的时候，<a href="https://www.codecogs.com/eqnedit.php?latex=P(i,j)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P(i,j)" title="P(i,j)" /></a>的值由<a href="https://www.codecogs.com/eqnedit.php?latex=P(i&space;&plus;&space;1,j&space;-&space;1)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P(i&space;&plus;&space;1,j&space;-&space;1)" title="P(i + 1,j - 1)" /></a>决定，这一点也不难思考：当左右边界字符串相等的时候，整个字符串是否是回文就完全由“原字符串去掉左右边界”的子串是否回文决定。但是这里还需要再多考虑一点点：“原字符串去掉左右边界”的子串的边界情况。
 
 > 1、当原字符串的元素个数为3个的时候，如果左右边界相等，那么去掉它们以后，只剩下1个字符，它一定是回文串，故原字符串也一定是回文串；
 >
 > 2、当原字符串的元素个数为2个的时候，如果左右边界相等，那么去掉它们以后，只剩下0个字符，显然原字符串也一定是回文串。
 
-把上面两点归纳一下，只要 S[i+ 1, j - 1] 至少包含两个元素，就有必要继续做判断，否则直接根据左右边界是否相等就能得到原字符串的回文性。而“S[i+ 1, j - 1] 至少包含两个元素”等价于i + 1 < j - 1，整理得i - j < -2，或者j - i > 2。
+把上面两点归纳一下，只要 <a href="https://www.codecogs.com/eqnedit.php?latex=S[i&plus;1,j-1]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?S[i&plus;1,j-1]" title="S[i+1,j-1]" /></a>至少包含两个元素，就有必要继续做判断，否则直接根据左右边界是否相等就能得到原字符串的回文性。而<a href="https://www.codecogs.com/eqnedit.php?latex=S[i&plus;1,j-1]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?S[i&plus;1,j-1]" title="S[i+1,j-1]" /></a> 至少包含两个元素”等价于 i + 1 < j - 1，整理得 i - j < -2，或者j - i > 2。
 
 综上，如果一个字符串的左右边界相等，以下二者之一成立即可：
-1、去掉左右边界以后的字符串不构成区间，即“ S[i+ 1, j - 1]  至少包含两个元素”的反面，即 i - j >= -2，或者 j - i <= 2；
+1、去掉左右边界以后的字符串不构成区间，即“ <a href="https://www.codecogs.com/eqnedit.php?latex=S[i&plus;1,j-1]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?S[i&plus;1,j-1]" title="S[i+1,j-1]" /></a> 至少包含两个元素”的反面，即 i - j >= -2，或者 j - i <= 2；
 2、去掉左右边界以后的字符串是回文串，具体说，它的回文性决定了原字符串的回文性。
 
-由于j>i所以状态转移方程为:
-
+由于j>i，所以状态转移方程为:
 ![p_2](./img/p_2.png)
 
 ```swift
@@ -213,9 +210,9 @@ func longestPalindrome(_ string: String) -> String {
 }
 ```
 
-时间复杂度：两层循环O(n2)。
+时间复杂度：两层循环<a href="https://www.codecogs.com/eqnedit.php?latex=O(n^2)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?O(n^2)" title="O(n^2)" /></a>。
 
-空间复杂度：用二维数组P保存每个子串的情况O(n2)。
+空间复杂度：用二维数组P保存每个子串的情况<a href="https://www.codecogs.com/eqnedit.php?latex=O(n^2)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?O(n^2)" title="O(n^2)" /></a>。
 
 ### 解法四：中心扩展算法
 
@@ -257,6 +254,6 @@ private func expandAroundCenter(_ string: String, left: Int, right: Int) -> Int 
 
 为什么会有两次expandAroundCenter，一次是i和i本身，一次是i和i+1，这就是上面说到的一个中心与两个中心。 而后会去判断这两种情况下谁的回文子串最长，并标记出这个子串在原字符串中的定位，即start和end。
 
-时间复杂度：O(n2)。
+时间复杂度：<a href="https://www.codecogs.com/eqnedit.php?latex=O(n^2)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?O(n^2)" title="O(n^2)" /></a>。
 
-空间复杂度：O(1)。
+空间复杂度：<a href="https://www.codecogs.com/eqnedit.php?latex=O(1)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?O(1)" title="O(1)" /></a>。
