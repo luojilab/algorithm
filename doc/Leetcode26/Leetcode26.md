@@ -48,6 +48,7 @@ func longestPalindrome(_ string: String) -> String {
 }
 ```
 
+
 时间复杂度是<a href="https://www.codecogs.com/eqnedit.php?latex=O(n^3)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?O(n^3)" title="O(n^3)" /></a>
 
 空间复杂度是<a href="https://www.codecogs.com/eqnedit.php?latex=O(1)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?O(1)" title="O(1)" /></a>
@@ -210,9 +211,11 @@ func longestPalindrome(_ string: String) -> String {
 }
 ```
 
+
 时间复杂度：两层循环<a href="https://www.codecogs.com/eqnedit.php?latex=O(n^2)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?O(n^2)" title="O(n^2)" /></a>。
 
 空间复杂度：用二维数组P保存每个子串的情况<a href="https://www.codecogs.com/eqnedit.php?latex=O(n^2)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?O(n^2)" title="O(n^2)" /></a>。
+
 
 ### 解法四：中心扩展算法
 
@@ -253,6 +256,7 @@ private func expandAroundCenter(_ string: String, left: Int, right: Int) -> Int 
 ```
 
 为什么会有两次expandAroundCenter，一次是i和i本身，一次是i和i+1，这就是上面说到的一个中心与两个中心。 而后会去判断这两种情况下谁的回文子串最长，并标记出这个子串在原字符串中的定位，即start和end。
+
 
 时间复杂度：<a href="https://www.codecogs.com/eqnedit.php?latex=O(n^2)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?O(n^2)" title="O(n^2)" /></a>。
 
