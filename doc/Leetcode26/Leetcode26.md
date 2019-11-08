@@ -48,7 +48,7 @@ func longestPalindrome(_ string: String) -> String {
 }
 ```
 
-时间复杂度是O(n3)
+时间复杂度是O($ n^3 $)
 
 空间复杂度是O(1)
 
@@ -155,9 +155,9 @@ func longestPalindrome(_ string: String) -> String {
 }
 ```
 
-时间复杂度：两层循环O(n2)。
+时间复杂度：两层循环O($ n^2 $)。
 
-空间复杂度：一个二维数组O(n2)。
+空间复杂度：一个二维数组O($ n^2 $)。
 
 ### 解法三：动态规划
 
@@ -213,9 +213,9 @@ func longestPalindrome(_ string: String) -> String {
 }
 ```
 
-时间复杂度：两层循环O(n2)。
+时间复杂度：两层循环O($ n^2 $)。
 
-空间复杂度：用二维数组P保存每个子串的情况O(n2)。
+空间复杂度：用二维数组P保存每个子串的情况O($ n^2 $)。
 
 ### 解法四：中心扩展算法
 
@@ -257,6 +257,6 @@ private func expandAroundCenter(_ string: String, left: Int, right: Int) -> Int 
 
 为什么会有两次expandAroundCenter，一次是i和i本身，一次是i和i+1，这就是上面说到的一个中心与两个中心。 而后会去判断这两种情况下谁的回文子串最长，并标记出这个子串在原字符串中的定位，即start和end。
 
-时间复杂度：O(n2)。
+时间复杂度：O($n^2$)。
 
 空间复杂度：O(1)。
