@@ -255,7 +255,7 @@ Output -1
 
 如下所示：
 
-![binary search tree](../../res/SearchinRotatedSortedArray/SearchinRotatedSortedArray_4.png)
+![binary search tree](../../res/SearchinRotatedSortedArray/SearchinRotatedSortedArray_4.jpg)
 
 #### 分析
 
