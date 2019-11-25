@@ -42,7 +42,7 @@ Output -1
 
 这里首先我们想一下变化前，正常的升序。我们怎么找给定的数字。
 
-![binary search tree](../../res/SearchinRotatedSortedArray/Search in Rotated Sorted Array_1)
+![binary search tree](../../res/SearchinRotatedSortedArray/Search in Rotated Sorted Array_1.png)
 
 很简单是吧
 
@@ -50,7 +50,7 @@ Output -1
 
 此时我们的数组变成下边这样：
 
-![binary search tree](../../res/SearchinRotatedSortedArray/Search in Rotated Sorted Array_2)
+![binary search tree](../../res/SearchinRotatedSortedArray/Search in Rotated Sorted Array_2.png)
 
 因为题目要求时间复杂度是 O（log(n)），所以我们首先会想到采取二分的方法去找。
 
@@ -69,7 +69,7 @@ Output -1
 
 如何找到最小元素（**旋转点**）呢？
 
-![binary search tree](../../res/SearchinRotatedSortedArray/Search in Rotated Sorted Array_3)
+![binary search tree](../../res/SearchinRotatedSortedArray/Search in Rotated Sorted Array_3.png)
 
 4  5  6  7  8  1  2  3  首先找到中间元素【7】
 
@@ -255,7 +255,7 @@ Output -1
 
 如下所示：
 
-![binary search tree](../../res/SearchinRotatedSortedArray/Search in Rotated Sorted Array_4)
+![binary search tree](../../res/SearchinRotatedSortedArray/Search in Rotated Sorted Array_4.png)
 
 #### 分析
 
