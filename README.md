@@ -55,7 +55,7 @@ Follow up:
 ```
 25. ***[【Longest Substring Without Repeating Characters】](./doc/Leetcode25/leetcode-25.md)*** 给定一个字符串，找到最长的没有重复字符的子串. 
 26. [***【Longest Palindromic Substring】***](./doc/Leetcode26/Leetcode26.md) 给定一个字符串，找到最长的回文子串
-27. ***【Container With Most Water】*** 给定一个正整数数组，其组成的容器所能容纳的最大面积
+27. [***【Container With Most Water】***](./doc/Container/ContainerWithMostWater.md) 给定一个正整数数组，其组成的容器所能容纳的最大面积
 ```
 给定：[1,8,6,2,5,4,8,3,7]
 ```
@@ -63,9 +63,9 @@ Follow up:
 ```
 组成的最大面积就是49
 ```
-28. ***【3Sum】*** 给定一个成员数量大于三的数组，找到三个元素a,b,c使a+b+c=0。找出所有可能的情况
+28. *** 【[3Sum](./doc/3sum/3sum.md)】 *** 给定一个成员数量大于三的数组，找到三个元素a,b,c使a+b+c=0。找出所有可能的情况
 
-29. ***【Search in Rotated Sorted Array】*** Suppose an array sorted in ascending order is rotated at some pivot unknown to you beforehand.```(i.e.[0,1,2,4,5,6,7]might become[4,5,6,7,0,1,2]).```
+29. ***【[Search in Rotated Sorted Array](./doc/SearchinRotatedSortedArray/search_in_rotated_sorted_array.md)】*** Suppose an array sorted in ascending order is rotated at some pivot unknown to you beforehand.```(i.e.[0,1,2,4,5,6,7]might become[4,5,6,7,0,1,2]).```
 You are given a target value to search. If found in the array return its index, otherwise return -1.
 You may assume no duplicate exists in the array.
 Your algorithm's runtime complexity must be in the order of&nbsp;O(logn).
