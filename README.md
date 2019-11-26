@@ -423,3 +423,75 @@ You can assume that you can always reach the last index.
 ## 加密算法专题
 56. AES
 57. RSA
+
+## Leetcode 算法
+
+58. **【Candy】** There are N children standing in a line. Each child is assigned a rating value.
+
+    You are giving candies to these children subjected to the following requirements:
+
+    Each child must have at least one candy.
+    Children with a higher rating get more candies than their neighbors.
+    What is the minimum candies you must give?
+    
+    ```
+    Example 1:
+    
+    Input: [1,0,2]
+    Output: 5
+    Explanation: You can allocate to the first, second and third child with 2, 1, 2 candies respectively.
+    Example 2:
+    
+    Input: [1,2,2]
+    Output: 4
+    Explanation: You can allocate to the first, second and third child with 1, 2, 1 candies respectively. The third child gets 1 candy because it satisfies the above two conditions.
+    ```
+    
+    
+
+59. **【Find Peak Element】** A peak element is an element that is greater than its neighbors.
+
+    Given an input array nums, where nums[i] ≠ nums[i+1], find a peak element and return its index.
+
+    The array may contain multiple peaks, in that case return the index to any one of the peaks is fine.
+
+    You may imagine that nums[-1] = nums[n] = -∞.
+
+    ```
+    Example 1:
+    
+    Input: nums = [1,2,3,1]
+    Output: 2
+    Explanation: 3 is a peak element and your function should return the index number 2.
+    Example 2:
+    
+    Input: nums = [1,2,1,3,5,6,4]
+    Output: 1 or 5 
+    Explanation: Your function can return either index number 1 where the peak element is 2, 
+                 or index number 5 where the peak element is 6.
+    ```
+
+    > Note:
+    >
+    > Your solution should be in logarithmic complexity.
+
+60. **【House Robber II】** You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed. All houses at this place are arranged in a circle. That means the first house is the neighbor of the last one. Meanwhile, adjacent houses have security system connected and it will automatically contact the police if two adjacent houses were broken into on the same night.
+
+    Given a list of non-negative integers representing the amount of money of each house, determine the maximum amount of money you can rob tonight without alerting the police.
+
+    ```
+    Example 1:
+    
+    Input: [2,3,2]
+    Output: 3
+    Explanation: You cannot rob house 1 (money = 2) and then rob house 3 (money = 2),
+                 because they are adjacent houses.
+    Example 2:
+    
+    Input: [1,2,3,1]
+    Output: 4
+    Explanation: Rob house 1 (money = 1) and then rob house 3 (money = 3).
+                 Total amount you can rob = 1 + 3 = 4.
+    ```
+
+    
