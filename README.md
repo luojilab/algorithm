@@ -82,7 +82,7 @@ Input :[2,3,6,7], target=7, A solution set is:
 ]
 ```
 
-31. ***【Permutations II】*** Given a collection of numbers that might contain duplicates, return all possible unique permutations.
+31. ***【[Permutations II](./doc/Leetcode47/readme.md)】*** Given a collection of numbers that might contain duplicates, return all possible unique permutations.
 Example:
 ```
 		Input: [1,1,2]
