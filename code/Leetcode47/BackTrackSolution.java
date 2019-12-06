@@ -32,33 +32,6 @@ public class BackTrackSolution {
             }
         }
     }
-//
-//    public void permutation(int[] array, int visited, int depth, Integer[] path, List<List<Integer>> result) {
-//        int arraySize = array.length;
-//        if (depth == arraySize) {
-//            result.add(createArray(path));
-//            return;
-//        }
-//        for (int i = 0; i < arraySize; i++) {
-//            if (notVisited(visited, i)) {
-//                if (i > 0 && array[i] == array[i - 1] && visited(visited, i - 1)) {
-//                    continue;
-//                }
-//                path[depth] = array[i];
-////                path.push(array[i]);
-//                visited ^= 1 << i;
-//                permutation(array, visited, depth + 1, path, result);
-//                // 回溯的时候，一定要记得状态重置
-////                path.pop();
-//                path[depth] = 0;
-//                visited ^= 1 << i;
-//            }
-//        }
-//    }
-//
-//    private List<Integer> createArray(Integer[] array) {
-//        return new ArrayList<>(Arrays.asList(array));
-//    }
 
     private boolean notVisited(int visited, int index) {
         return ((visited >> index) & 1) == 0;
