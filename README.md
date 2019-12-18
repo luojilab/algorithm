@@ -494,6 +494,58 @@ You can assume that you can always reach the last index.
                  Total amount you can rob = 1 + 3 = 4.
     ```
 
+
+61. **【Min Stack】** Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
+
+    - push(x) -- Push element x onto stack.
+    - pop() -- Removes the element on top of the stack.
+    - top() -- Get the top element.
+    - getMin() -- Retrieve the minimum element in the stack.
+
+    **Example:**
+
+    ```
+    MinStack minStack = new MinStack();
+    minStack.push(-2);
+    minStack.push(0);
+    minStack.push(-3);
+    minStack.getMin();   --> Returns -3.
+    minStack.pop();
+    minStack.top();      --> Returns 0.
+    minStack.getMin();   --> Returns -2.
+    ```
+    
+62. **【Cat and Mouse】**A game on an **undirected** graph is played by two players, Mouse and Cat, who alternate turns.
+
+    The graph is given as follows: `graph[a]` is a list of all nodes `b` such that `ab` is an edge of the graph.
+
+    Mouse starts at node 1 and goes first, Cat starts at node 2 and goes second, and there is a Hole at node 0.
+
+    During each player's turn, they **must** travel along one edge of the graph that meets where they are. For example, if the Mouse is at node `1`, it **must** travel to any node in `graph[1]`.
+
+    Additionally, it is not allowed for the Cat to travel to the Hole (node 0.)
+
+    Then, the game can end in 3 ways:
+
+    - If ever the Cat occupies the same node as the Mouse, the Cat wins.
+    - If ever the Mouse reaches the Hole, the Mouse wins.
+    - If ever a position is repeated (ie. the players are in the same position as a previous turn, and it is the same player's turn to move), the game is a draw.
+
+    Given a `graph`, and assuming both players play optimally, return `1` if the game is won by Mouse, `2` if the game is won by Cat, and `0` if the game is a draw.
+
+    **Example 1:**
+
+    ```
+    Input: [[2,5],[3],[0,4,5],[1,4,5],[2,3],[0,2,3]]
+    Output: 0
+    Explanation:
+    4---3---1
+    |   |
+    2---5
+     \ /
+      0
+    ```
+
     
 
 
