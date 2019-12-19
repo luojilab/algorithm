@@ -103,14 +103,14 @@ if (i == 0 && j == 0) {
 }
 ```
 
-> 3）左边界
+> 3）上边界
 ```C++
 if (i == 0 && j >= 1) {
     return RecursiveUniquePathsII<m, n>(obstacle_grid, i, j -1);
 }
 ```
 
-> 4）上边界
+> 4）左边界
 ```C++
 if (i >= 1 && j == 0) {
     return RecursiveUniquePathsII<m, n>(obstacle_grid, i - 1, j);
@@ -132,11 +132,11 @@ return future_base::BigInegerAdd(dp1, dp2);
 
 ![](../../res/UniquePathsII/dp2.png)
 
-> 2）左边界
+> 2）上边界
 
 ![](../../res/UniquePathsII/dp3.png)
 
-> 3）上边界
+> 3）左边界
 
 ![](../../res/UniquePathsII/dp4.png)
 
