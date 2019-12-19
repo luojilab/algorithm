@@ -150,8 +150,8 @@ return future_base::BigInegerAdd(dp1, dp2);
 ```C++
 static const int kLimitGridCount = 100;
 
-//随机十分之一设置为障碍
-static const int kRandomObstaclePercent = 10;
+//随机障碍比例
+static const float kRandomObstaclePercent = 0.1;
 
 template <int m, int n>
 std::string **MakeObstacleGrid() {
@@ -163,7 +163,7 @@ std::string **MakeObstacleGrid() {
     for (int i = 0; i < m; ++i) {
         obstacle_grid[i] = new std::string[n];
         
-        int random_count = n / kRandomObstaclePercent;
+        int random_count = (int)(n * kRandomObstaclePercent);
         
         for (int j = 0; j < random_count; ++j) {
             obstacle_grid[i][arc4random() % n] = StaticObstacleString();
