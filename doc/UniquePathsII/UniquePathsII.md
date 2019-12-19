@@ -165,6 +165,10 @@ std::string **MakeObstacleGrid() {
         
         int random_count = (int)(n * kRandomObstaclePercent);
         
+        for (int j = 0; j < n; ++j) {
+            obstacle_grid[i][j] = "0";
+        }
+        
         for (int j = 0; j < random_count; ++j) {
             obstacle_grid[i][arc4random() % n] = StaticObstacleString();
         }

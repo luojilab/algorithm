@@ -47,6 +47,10 @@ std::string **MakeObstacleGrid() {
         
         int random_count = (int)(n * kRandomObstaclePercent);
         
+        for (int j = 0; j < n; ++j) {
+            obstacle_grid[i][j] = "0";
+        }
+        
         for (int j = 0; j < random_count; ++j) {
             obstacle_grid[i][arc4random() % n] = StaticObstacleString();
         }
@@ -160,14 +164,15 @@ std::string UniquePathsII(std::string **obstacle_grid) {
     */
     
     //3.修改原来数组
-    /*
     for (size_t i = 0; i < m; ++i) {
         for (size_t j = 0; j < n; ++j) {
             if (obstacle_grid[i][j] == StaticObstacleString()) {
                 obstacle_grid[i][j] = std::to_string(0);
+                printf("%s\t", obstacle_grid[i][j].c_str());
                 continue;
             } else if (i == 0 && j == 0) {
                 obstacle_grid[0][0] = std::to_string(1); //如果开始不是障碍，则路径为1
+                printf("%s\t", obstacle_grid[i][j].c_str());
                 continue;
             }
 
@@ -179,14 +184,18 @@ std::string UniquePathsII(std::string **obstacle_grid) {
                 obstacle_grid[i][j] = future_base::BigInegerAdd(obstacle_grid[i - 1][j],
                                                                 obstacle_grid[i][j - 1]);
             }
+            
+            printf("%s\t", obstacle_grid[i][j].c_str());
         }
+        
+        printf("\n");
     }
 
     unique_path_count = obstacle_grid[m - 1][n - 1];
     return unique_path_count;
-    */
     
     //4.基于3的优化，更易读
+    /*
     if (obstacle_grid[0][0] == StaticObstacleString()) {
         return std::to_string(0);
     } else {
@@ -221,56 +230,120 @@ std::string UniquePathsII(std::string **obstacle_grid) {
         }
     }
     unique_path_count = obstacle_grid[m - 1][n - 1];
+    */
     
     return unique_path_count;
 }
 
 int main(int argc, const char * argv[]) {
     
-    /*
-    int obstacle_grid[][1] = {
-        {1}
-    };
+    {
+        int obstacle_grid[][1] = {
+            {1}
+        };
+        
+        const int m = 1;
+        const int n = 1;
+        
+        std::string **int64_grid = ConvertArrayToPointer<m, n>(obstacle_grid);
+        std::string count = UniquePathsII<m, n>(int64_grid);
+        DestroyObstacleGrid<m, n>(int64_grid);
+        
+        printf("Unique path count is:%s\n\n", count.c_str());
+    }
 
-    int obstacle_grid[][1] = {
-        {0}
-    };
+    {
+        int obstacle_grid[][1] = {
+            {0}
+        };
+        
+        const int m = 1;
+        const int n = 1;
+        
+        std::string **int64_grid = ConvertArrayToPointer<m, n>(obstacle_grid);
+        std::string count = UniquePathsII<m, n>(int64_grid);
+        DestroyObstacleGrid<m, n>(int64_grid);
+        
+        printf("Unique path count is:%s\n\n", count.c_str());
+    }
 
 
-    int obstacle_grid[][2] = {
-        {0, 0}
-    };
+    {
+        int obstacle_grid[][2] = {
+            {0, 0}
+        };
+        
+        const int m = 1;
+        const int n = 2;
+        
+        std::string **int64_grid = ConvertArrayToPointer<m, n>(obstacle_grid);
+        std::string count = UniquePathsII<m, n>(int64_grid);
+        DestroyObstacleGrid<m, n>(int64_grid);
+        
+        printf("Unique path count is:%s\n\n", count.c_str());
+    }
 
-    int obstacle_grid[][2] = {
-        {0, 0},
-        {0, 0}
-    };
+    {
+        int obstacle_grid[][2] = {
+            {0, 0},
+            {0, 0}
+        };
+        
+        const int m = 2;
+        const int n = 2;
+        
+        std::string **int64_grid = ConvertArrayToPointer<m, n>(obstacle_grid);
+        std::string count = UniquePathsII<m, n>(int64_grid);
+        DestroyObstacleGrid<m, n>(int64_grid);
+        
+        printf("Unique path count is:%s\n\n", count.c_str());
+    }
 
-    
-    int obstacle_grid[][3] = {
-        {0, 0, 0},
-        {0, 0, 0},
-        {0, 0, 0},
-        {0, 0, 0}
-    };
-    
-    int obstacle_grid[][3] = {
-        {0, 0, 0},
-        {0, 1, 0},
-        {0, 0, 0},
-        {0, 0, 0}
-    };
-    */
-
-    int obstacle_grid[][4] = {
-        {0, 0, 0, 0},
-        {0, 0, 0, 0},
-        {0, 0, 1, 0},
-        {1, 0, 0, 0},
-        {0, 0, 0, 0}
-    };
+    {
+        int obstacle_grid[][3] = {
+            {0, 0, 0},
+            {0, 0, 0},
+            {0, 0, 0},
+            {0, 0, 0}
+        };
+        
+        const int m = 4;
+        const int n = 3;
+        
+        std::string **int64_grid = ConvertArrayToPointer<m, n>(obstacle_grid);
+        std::string count = UniquePathsII<m, n>(int64_grid);
+        DestroyObstacleGrid<m, n>(int64_grid);
+        
+        printf("Unique path count is:%s\n\n", count.c_str());
+    }
     
     {
+        int obstacle_grid[][3] = {
+            {0, 0, 0},
+            {0, 1, 0},
+            {0, 0, 0},
+            {0, 0, 0}
+        };
+        
+        const int m = 4;
+        const int n = 3;
+        
+        std::string **int64_grid = ConvertArrayToPointer<m, n>(obstacle_grid);
+        std::string count = UniquePathsII<m, n>(int64_grid);
+        DestroyObstacleGrid<m, n>(int64_grid);
+        
+        printf("Unique path count is:%s\n\n", count.c_str());
+    }
+    
+    {
+        int obstacle_grid[][4] = {
+            {0, 0, 0, 0},
+            {0, 0, 0, 0},
+            {0, 0, 1, 0},
+            {1, 0, 0, 0},
+            {0, 0, 0, 0}
+        };
+        
         const int m = 5;
         const int n = 4;
         
@@ -278,7 +351,7 @@ int main(int argc, const char * argv[]) {
         std::string count = UniquePathsII<m, n>(int64_grid);
         DestroyObstacleGrid<m, n>(int64_grid);
         
-        printf("Unique path count is:%s\n", count.c_str());
+        printf("Unique path count is:%s\n\n", count.c_str());
     }
     
     {
@@ -289,7 +362,7 @@ int main(int argc, const char * argv[]) {
         std::string count = UniquePathsII<m, n>(random_obstacle_grid);
         DestroyObstacleGrid<m, n>(random_obstacle_grid);
         
-        printf("Unique path count is:%s\n", count.c_str());
+        printf("Unique path count is:%s\n\n", count.c_str());
     }
     
     return 0;
