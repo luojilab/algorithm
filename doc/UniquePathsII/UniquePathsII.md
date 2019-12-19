@@ -1,11 +1,11 @@
-### 一、不同路径I（Unique Path I）
+### 一、不同路径I（Unique Paths I）
 一个机器人位于一个**m x n**网格的左上角（起始点在下图中标记为“Start”）。
 
 机器人每次只能**向下**或者**向右**移动一步。机器人试图达到网格的右下角（在下图中标记为“Finish”）。
 
 问总共有多少条**不同的路径**？
 
-![](../../res/UniquePathII/robot_maze.png)
+![](../../res/UniquePathsII/robot_maze.png)
 
 例如，上图是一个7 x 3的网格。有多少可能的路径？
 
@@ -35,7 +35,7 @@
 
 **示例 3:**
 
-![](../../res/UniquePathII/2x2.png)
+![](../../res/UniquePathsII/2x2.png)
 
 > 输入: m = 2, n = 2
 
@@ -49,7 +49,7 @@
 
 > 2.向下 -> 向右
 
-### 二、不同路径II（Unique Path II）
+### 二、不同路径II（Unique Paths II）
 
 #### 1.如何理解这题目？
 
@@ -61,15 +61,15 @@
 
 4）下面再看例子
 
-![](../../res/UniquePathII/4x3.png)
+![](../../res/UniquePathsII/4x3.png)
 
 > 上图中，这个4 x 3的网格，中间只有一个障碍节点；不难从右边表格数出，从左上角到右下角到不同路径数量为**4**；
 
-![](../../res/UniquePathII/5x4.png)
+![](../../res/UniquePathsII/5x4.png)
 
 > 上图中，这个5 x 4的网格，中间有两个障碍节点；
 
-![](../../res/UniquePathII/5x4-1.png)
+![](../../res/UniquePathsII/5x4-1.png)
 
 > 上图是前面5 x 4网格的详细不同数量，新建一个新的网络extend_grid存储该节点的不同路径数量，行数为m + 1，列数为n + 1；
 
@@ -77,7 +77,7 @@
 
 > 可以看出它的不同路径数量为**13**。
 
-![](../../res/UniquePathII/5x4-2.png)
+![](../../res/UniquePathsII/5x4-2.png)
 
 > 上图的解法，没有新建extend_grid存储不同路径数量，而是从左上角至右下角依次修改原有网格的值，最后grid[m - 1][n - 1]即为所求的不同路径数量。
 
@@ -106,21 +106,21 @@ if (i == 0 && j == 0) {
 > 3）左边界
 ```C++
 if (i == 0 && j >= 1) {
-    return RecursiveUniquePathII<m, n>(obstacle_grid, i, j -1);
+    return RecursiveUniquePathsII<m, n>(obstacle_grid, i, j -1);
 }
 ```
 
 > 4）上边界
 ```C++
 if (i >= 1 && j == 0) {
-    return RecursiveUniquePathII<m, n>(obstacle_grid, i - 1, j);
+    return RecursiveUniquePathsII<m, n>(obstacle_grid, i - 1, j);
 }
 ```
 
 > 5）其他情况递归
 ```C++
-std::string dp1 = RecursiveUniquePathII<m, n>(obstacle_grid, i - 1, j);
-std::string dp2 = RecursiveUniquePathII<m, n>(obstacle_grid, i, j - 1);
+std::string dp1 = RecursiveUniquePathsII<m, n>(obstacle_grid, i - 1, j);
+std::string dp2 = RecursiveUniquePathsII<m, n>(obstacle_grid, i, j - 1);
 return future_base::BigInegerAdd(dp1, dp2);
 ```
 
@@ -128,21 +128,21 @@ return future_base::BigInegerAdd(dp1, dp2);
 
 > 1）起始点
 
-![](../../res/UniquePathII/dp1.png)
+![](../../res/UniquePathsII/dp1.png)
 
-![](../../res/UniquePathII/dp2.png)
+![](../../res/UniquePathsII/dp2.png)
 
 > 2）左边界
 
-![](../../res/UniquePathII/dp3.png)
+![](../../res/UniquePathsII/dp3.png)
 
 > 3）上边界
 
-![](../../res/UniquePathII/dp4.png)
+![](../../res/UniquePathsII/dp4.png)
 
 > 4）剩余情况
 
-![](../../res/UniquePathII/dp5.png)
+![](../../res/UniquePathsII/dp5.png)
 
 ### 三、代码实现
 
@@ -198,15 +198,15 @@ std::string RecursiveUniquePathII(std::string **obstacle_grid, int i, int j) {
     }
     
     if (i == 0 && j >= 1) {
-        return RecursiveUniquePathII<m, n>(obstacle_grid, i, j -1);
+        return RecursiveUniquePathsII<m, n>(obstacle_grid, i, j -1);
     }
     
     if (i >= 1 && j == 0) {
-        return RecursiveUniquePathII<m, n>(obstacle_grid, i - 1, j);
+        return RecursiveUniquePathsII<m, n>(obstacle_grid, i - 1, j);
     }
     
-    std::string dp1 = RecursiveUniquePathII<m, n>(obstacle_grid, i - 1, j);
-    std::string dp2 = RecursiveUniquePathII<m, n>(obstacle_grid, i, j - 1);
+    std::string dp1 = RecursiveUniquePathsII<m, n>(obstacle_grid, i - 1, j);
+    std::string dp2 = RecursiveUniquePathsII<m, n>(obstacle_grid, i, j - 1);
     return future_base::BigInegerAdd(dp1, dp2);
 }
 ```

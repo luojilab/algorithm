@@ -75,7 +75,7 @@ void DestroyObstacleGrid(std::string **obstacle_grid) {
 }
 
 template <int m, int n>
-std::string RecursiveUniquePathII(std::string **obstacle_grid, int i, int j) {
+std::string RecursiveUniquePathsII(std::string **obstacle_grid, int i, int j) {
     if (obstacle_grid == NULL) {
         return std::to_string(0);
     }
@@ -93,15 +93,15 @@ std::string RecursiveUniquePathII(std::string **obstacle_grid, int i, int j) {
     }
     
     if (i == 0 && j >= 1) {
-        return RecursiveUniquePathII<m, n>(obstacle_grid, i, j -1);
+        return RecursiveUniquePathsII<m, n>(obstacle_grid, i, j -1);
     }
     
     if (i >= 1 && j == 0) {
-        return RecursiveUniquePathII<m, n>(obstacle_grid, i - 1, j);
+        return RecursiveUniquePathsII<m, n>(obstacle_grid, i - 1, j);
     }
     
-    std::string dp1 = RecursiveUniquePathII<m, n>(obstacle_grid, i - 1, j);
-    std::string dp2 = RecursiveUniquePathII<m, n>(obstacle_grid, i, j - 1);
+    std::string dp1 = RecursiveUniquePathsII<m, n>(obstacle_grid, i - 1, j);
+    std::string dp2 = RecursiveUniquePathsII<m, n>(obstacle_grid, i, j - 1);
     return future_base::BigInegerAdd(dp1, dp2);
 }
 
@@ -118,7 +118,7 @@ std::string UniquePathsII(std::string **obstacle_grid) {
     }
     
     //1.递归解法
-    //unique_path_count = RecursiveUniquePathII<m, n>(obstacle_grid, m - 1, n - 1);
+    //unique_path_count = RecursiveUniquePathsII<m, n>(obstacle_grid, m - 1, n - 1);
     //return unique_path_count;
     
     
