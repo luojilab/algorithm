@@ -27,6 +27,7 @@
 > 输出: 28
 
 **示例 3:**
+
 ![](../../res/UniquePathII/2x2.png)
 
 
@@ -50,17 +51,21 @@
 4）下面再看两个简单例子
 
 ![](../../res/UniquePathII/4x3.png)
+
 > 上图中，这个4 x 3的网格，中间只有一个障碍节点；不难从右边表格数出，从左上角到右下角到不同路径数量为**4**；
 
 ![](../../res/UniquePathII/5x4.png)
+
 > 上图中，这个5 x 4的网格，中间有两个障碍节点；
 
 ![](../../res/UniquePathII/5x4-1.png)
+
 > 上图是前面5 x 4网格的详细不同数量，新建一个新的网络extend_grid存储该节点的不同路径数量，行数为m + 1，列数为n + 1；
 > 然后定义extend_grid[0][1] = 1，或者extend_grid[1][0] = 1；
 > 可以看出它的不同路径数量为**13**。
 
 ![](../../res/UniquePathII/5x4-2.png)
+
 > 上图的解法，没有新建extend_grid存储不同路径数量，而是从左上角至右下角依次修改原有网格的值，最后grid[m - 1][n - 1]即为所求的不同路径数量。
 
 #### 2.确定边界
@@ -110,17 +115,21 @@ return future_base::BigInegerAdd(dp1, dp2);
 #### 4.状态转移方程
 
 > 1）起始点
+
 ![](../../res/UniquePathII/dp1.png)
 
 ![](../../res/UniquePathII/dp2.png)
 
 > 2）左边界
+
 ![](../../res/UniquePathII/dp3.png)
 
 > 3）上边界
+
 ![](../../res/UniquePathII/dp4.png)
 
 > 4）剩余情况
+
 ![](../../res/UniquePathII/dp5.png)
 
 ### 三、代码实现
