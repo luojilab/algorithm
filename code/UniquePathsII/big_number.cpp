@@ -3,7 +3,7 @@
 namespace future_base {
     
 // s1+s2
-std::string BigInegerAdd(std::string s1, std::string s2) {
+std::string BigIntegerAdd(std::string s1, std::string s2) {
     int len = s1.size()>s2.size()?s1.size()+1:s2.size()+1;
     std::string res(len, '0');
     int i = s1.size() - 1, j = s2.size() - 1, k = len - 1;
@@ -66,9 +66,9 @@ std::string BigInegerAdd(std::string s1, std::string s2) {
 
 // s1 - s2
 // negative == true means s1 < s2
-std::string BigInegerMinus(std::string s1, std::string s2, bool negative) {
+std::string BigIntegerMinus(std::string s1, std::string s2, bool negative) {
     if (s1.size() < s2.size()) {
-        return BigInegerMinus(s2, s1, true);
+        return BigIntegerMinus(s2, s1, true);
     }
     
     if (s1.size() == s2.size()) {
@@ -77,7 +77,7 @@ std::string BigInegerMinus(std::string s1, std::string s2, bool negative) {
             i++;
         if (s1[i] < s2[i])
         {
-            return BigInegerMinus(s2, s1, true);
+            return BigIntegerMinus(s2, s1, true);
         }
     }
     
@@ -137,7 +137,7 @@ std::string BigInegerMinus(std::string s1, std::string s2, bool negative) {
     }
 }
 
-std::string BigIneger(std::string s1, std::string s2) {
+std::string BigInteger(std::string s1, std::string s2) {
     if (s1 == "") {
         return s2;
     }
@@ -156,13 +156,13 @@ std::string BigIneger(std::string s1, std::string s2) {
     }
     
     if (sign1 == '+' && sign2 == '+') {
-        return BigInegerAdd(s1, s2);
+        return BigIntegerAdd(s1, s2);
     } else if (sign1 == '+' && sign2 == '-') {
-        return BigInegerMinus(s1, s2.substr(1, s2.size()-1),false);
+        return BigIntegerMinus(s1, s2.substr(1, s2.size()-1),false);
     } else if (sign1 == '-' && sign2 == '+') {
-        return BigInegerMinus(s2, s1.substr(1, s1.size()-1), false);
+        return BigIntegerMinus(s2, s1.substr(1, s1.size()-1), false);
     } else {
-        std::string tmp = BigInegerAdd(s1.substr(1, s1.size()-1), s2.substr(1, s2.size()-1));
+        std::string tmp = BigIntegerAdd(s1.substr(1, s1.size()-1), s2.substr(1, s2.size()-1));
         if (tmp[0] == '0') {
             tmp = tmp.substr(1, tmp.size()- 1);
         }

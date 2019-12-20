@@ -7,12 +7,10 @@
 #include <string>
 
 namespace future_base {
-    // s1+s2
-    std::string BigInegerAdd(std::string s1, std::string s2);
+    std::string BigIntegerAdd(std::string s1, std::string s2);
     
-    // s1 - s2
     // negative == true means s1 < s2
-    std::string BigInegerMinus(std::string s1, std::string s2, bool negative);
+    std::string BigIntegerMinus(std::string s1, std::string s2, bool negative);
     
-    std::string BigIneger(std::string s1, std::string s2);
+    std::string BigInteger(std::string s1, std::string s2);
 }

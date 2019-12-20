@@ -121,7 +121,7 @@ if (i >= 1 && j == 0) {
 ```C++
 std::string dp1 = RecursiveUniquePathsII<m, n>(obstacle_grid, i - 1, j);
 std::string dp2 = RecursiveUniquePathsII<m, n>(obstacle_grid, i, j - 1);
-return future_base::BigInegerAdd(dp1, dp2);
+return future_base::BigIntegerAdd(dp1, dp2);
 ```
 
 #### 4.状态转移方程
@@ -211,7 +211,7 @@ std::string RecursiveUniquePathII(std::string **obstacle_grid, int i, int j) {
     
     std::string dp1 = RecursiveUniquePathsII<m, n>(obstacle_grid, i - 1, j);
     std::string dp2 = RecursiveUniquePathsII<m, n>(obstacle_grid, i, j - 1);
-    return future_base::BigInegerAdd(dp1, dp2);
+    return future_base::BigIntegerAdd(dp1, dp2);
 }
 ```
 > 注意：在m = 30，n = 30时候，递归实现几乎就很难执行完毕。
@@ -240,7 +240,7 @@ std::string UniquePathsII(std::string **obstacle_grid) {
                 continue;
             }
             
-            result_count_array[i][j] = future_base::BigInegerAdd(result_count_array[i - 1][j],
+            result_count_array[i][j] = future_base::BigIntegerAdd(result_count_array[i - 1][j],
                                                                     result_count_array[i][j - 1]);
         }
     }
@@ -280,7 +280,7 @@ std::string UniquePathsII(std::string **obstacle_grid) {
             } else if (j == 0) {
                 obstacle_grid[i][j] = obstacle_grid[i - 1][j];
             } else {
-                obstacle_grid[i][j] = future_base::BigInegerAdd(obstacle_grid[i - 1][j],
+                obstacle_grid[i][j] = future_base::BigIntegerAdd(obstacle_grid[i - 1][j],
                                                                 obstacle_grid[i][j - 1]);
             }
         }
@@ -334,7 +334,7 @@ std::string UniquePathsII(std::string **obstacle_grid) {
                 continue;
             }
             
-            obstacle_grid[i][j] = future_base::BigInegerAdd(obstacle_grid[i - 1][j],
+            obstacle_grid[i][j] = future_base::BigIntegerAdd(obstacle_grid[i - 1][j],
                                                             obstacle_grid[i][j - 1]);
         }
     }

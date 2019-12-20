@@ -7,7 +7,7 @@
 static const int kLimitGridCount = 100;
 
 //随机障碍比例
-static const float kRandomObstaclePercent = 0.1;
+static const float kRandomObstaclePercent = 0.3;
 
 static std::string &StaticObstacleString() {
     static std::string *obstacle_string = new std::string("1");
@@ -106,7 +106,7 @@ std::string RecursiveUniquePathsII(std::string **obstacle_grid, int i, int j) {
     
     std::string dp1 = RecursiveUniquePathsII<m, n>(obstacle_grid, i - 1, j);
     std::string dp2 = RecursiveUniquePathsII<m, n>(obstacle_grid, i, j - 1);
-    return future_base::BigInegerAdd(dp1, dp2);
+    return future_base::BigIntegerAdd(dp1, dp2);
 }
 
 template <int m, int n>
@@ -125,6 +125,15 @@ std::string UniquePathsII(std::string **obstacle_grid) {
     //unique_path_count = RecursiveUniquePathsII<m, n>(obstacle_grid, m - 1, n - 1);
     //return unique_path_count;
     
+    printf("---------------\n");
+    printf("Origin obstacle grid:\n");
+    for (size_t i = 0; i < m; ++i) {
+        for (size_t j = 0; j < n; ++j) {
+            printf("%s\t", obstacle_grid[i][j].c_str());
+        }
+        printf("\n");
+    }
+    printf("Result grid:\n");
     
     //2.用二维数组存储
     /*
@@ -150,7 +159,7 @@ std::string UniquePathsII(std::string **obstacle_grid) {
                 continue;
             }
             
-            result_count_array[i][j] = future_base::BigInegerAdd(result_count_array[i - 1][j],
+            result_count_array[i][j] = future_base::BigIntegerAdd(result_count_array[i - 1][j],
                                                                  result_count_array[i][j - 1]);
             
             printf("%s\t", result_count_array[i][j].c_str());
@@ -181,7 +190,7 @@ std::string UniquePathsII(std::string **obstacle_grid) {
             } else if (j == 0) {
                 obstacle_grid[i][j] = obstacle_grid[i - 1][j];
             } else {
-                obstacle_grid[i][j] = future_base::BigInegerAdd(obstacle_grid[i - 1][j],
+                obstacle_grid[i][j] = future_base::BigIntegerAdd(obstacle_grid[i - 1][j],
                                                                 obstacle_grid[i][j - 1]);
             }
             
@@ -225,7 +234,7 @@ std::string UniquePathsII(std::string **obstacle_grid) {
                 continue;
             }
             
-            obstacle_grid[i][j] = future_base::BigInegerAdd(obstacle_grid[i - 1][j],
+            obstacle_grid[i][j] = future_base::BigIntegerAdd(obstacle_grid[i - 1][j],
                                                             obstacle_grid[i][j - 1]);
         }
     }
@@ -350,6 +359,17 @@ int main(int argc, const char * argv[]) {
         std::string **int64_grid = ConvertArrayToPointer<m, n>(obstacle_grid);
         std::string count = UniquePathsII<m, n>(int64_grid);
         DestroyObstacleGrid<m, n>(int64_grid);
+        
+        printf("Unique path count is:%s\n\n", count.c_str());
+    }
+    
+    {
+        const int m = 7;
+        const int n = 3;
+        
+        std::string **random_obstacle_grid = MakeObstacleGrid<m, n>();
+        std::string count = UniquePathsII<m, n>(random_obstacle_grid);
+        DestroyObstacleGrid<m, n>(random_obstacle_grid);
         
         printf("Unique path count is:%s\n\n", count.c_str());
     }
