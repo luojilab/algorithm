@@ -102,7 +102,7 @@ Output: [[1,6],[8,10],[15,18]]
 Explanation: Since intervals [1,3] and [2,6] overlaps, merge them into [1,6].
 ```
 
-33. ***【Unique Paths II】*** A robot is located at the top-left corner of a m x n grid (marked 'Start' in the diagram below).
+33. ***[【Unique Paths II】](./doc/UniquePathsII/UniquePathsII.md)*** A robot is located at the top-left corner of a m x n grid (marked 'Start' in the diagram below).
 The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked 'Finish' in the diagram below).
 Now consider if some obstacles are added to the grids. How many unique paths would there be?
 ![50ee09bddc06507fc3d53fa1e5986ca6.png](./res/cover/robot_maze.png)
