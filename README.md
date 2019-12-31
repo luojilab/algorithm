@@ -94,7 +94,7 @@ Example:
 		]
 ```
 
-32. ***【Merge Intervals】*** 给定区间的组合，然后合并相互覆盖的区间。输出结果
+32. ***【[Merge Intervals](./doc/Leetcode56/readme.md)】*** 给定区间的组合，然后合并相互覆盖的区间。输出结果
     Example:
 ```
 Input: [[1,3],[2,6],[8,10],[15,18]]
@@ -495,7 +495,7 @@ You can assume that you can always reach the last index.
     ```
 
 
-61. **【Min Stack】** Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
+61. **[【Min Stack】](./doc/Leetcode155/Leetcode155.md)** Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 
     - push(x) -- Push element x onto stack.
     - pop() -- Removes the element on top of the stack.
