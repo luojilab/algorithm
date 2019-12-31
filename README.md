@@ -94,7 +94,7 @@ Example:
 		]
 ```
 
-32. ***【Merge Intervals】*** 给定区间的组合，然后合并相互覆盖的区间。输出结果
+32. ***【[Merge Intervals](./doc/Leetcode56/readme.md)】*** 给定区间的组合，然后合并相互覆盖的区间。输出结果
     Example:
 ```
 Input: [[1,3],[2,6],[8,10],[15,18]]
