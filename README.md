@@ -495,7 +495,7 @@ You can assume that you can always reach the last index.
     ```
 
 
-61. **【Min Stack】** Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
+61. **[【Min Stack】](./doc/Leetcode155/Leetcode155.md)** Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 
     - push(x) -- Push element x onto stack.
     - pop() -- Removes the element on top of the stack.
