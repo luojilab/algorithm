@@ -515,7 +515,7 @@ You can assume that you can always reach the last index.
     minStack.getMin();   --> Returns -2.
     ```
     
-62. **【Cat and Mouse】**A game on an **undirected** graph is played by two players, Mouse and Cat, who alternate turns.
+62. **[【Cat and Mouse】](./doc/CatAndMouse/CatAndMouse.md)** A game on an **undirected** graph is played by two players, Mouse and Cat, who alternate turns.
 
     The graph is given as follows: `graph[a]` is a list of all nodes `b` such that `ab` is an edge of the graph.
 
