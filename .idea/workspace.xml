@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c00e4e4-e7af-4fc5-979e-0b5f7ff7e075" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/doc/Leetcode209/leetcode-209.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Leetcode209/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Leetcode209/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Leetcode209/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Leetcode209/4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/Leetcode209/leetcode-209.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/Leetcode209/leetcode-209.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,8 +33,8 @@
         <entry file="file://$PROJECT_DIR$/doc/Leetcode209/leetcode-209.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="355">
-                <caret line="163" selection-start-line="163" selection-end-line="163" />
+              <first_editor relative-caret-position="54">
+                <caret line="174" selection-start-line="174" selection-end-line="174" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -62,10 +57,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="178" />
-    <option name="y" value="-1055" />
-    <option name="width" value="1920" />
-    <option name="height" value="1015" />
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="826" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -215,11 +209,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="9" y="-1055" width="1920" height="1015" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="826" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.12205567" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.16426513" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
@@ -227,12 +221,14 @@
       <window_info id="DB Browser" order="6" />
       <window_info id="Capture Tool" order="7" />
       <window_info id="Favorites" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Run" />
       <window_info anchor="bottom" id="Statistic" />
-      <window_info anchor="bottom" id="Version Control" order="0" weight="0.32914287" />
+      <window_info anchor="bottom" id="Debug" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.6742857" />
       <window_info anchor="bottom" id="DB Execution Console" order="1" />
       <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="4" weight="0.32914287" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="4" visible="true" weight="0.41982508" />
       <window_info anchor="right" id="Translate" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Theme Preview" order="2" />
@@ -295,8 +291,8 @@
     <entry file="file://$PROJECT_DIR$/doc/Leetcode209/leetcode-209.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="355">
-            <caret line="163" selection-start-line="163" selection-end-line="163" />
+          <first_editor relative-caret-position="54">
+            <caret line="174" selection-start-line="174" selection-end-line="174" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />
