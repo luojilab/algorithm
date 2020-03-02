@@ -125,7 +125,7 @@ There are two ways to reach the bottom-right corner:
 2. Down -> Down -> Right -> Right
 ```
 
-34. ***【Minimum Size Subarray Sum】*** Given an array of n positive integers and a positive integer s, find the minimal length of a contiguous subarray of which the sum ≥ s. If there isn't one, return 0 instead.
+34. ***[【Minimum Size Subarray Sum】](./doc/Leetcode209/leetcode-209.md)*** Given an array of n positive integers and a positive integer s, find the minimal length of a contiguous subarray of which the sum ≥ s. If there isn't one, return 0 instead.
 Example:
 ```
 Input: s = 7, nums = [2,3,1,2,4,3]
