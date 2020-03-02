@@ -1,4 +1,4 @@
-**【Cat and Mouse】**A game on an **undirected** graph is played by two players, Mouse and Cat, who alternate turns.
+62. **【Cat and Mouse】**A game on an **undirected** graph is played by two players, Mouse and Cat, who alternate turns.
 
 The graph is given as follows: `graph[a]` is a list of all nodes `b` such that `ab` is an edge of the graph.
 
@@ -31,7 +31,7 @@ Explanation:
 
 
 
-##中文版：
+## 中文版：
 
 两个玩家分别扮演猫（Cat）和老鼠（Mouse）在无向图上进行游戏，他们轮流行动。
 
@@ -68,7 +68,7 @@ Explanation:
 - 保证 graph[1] 非空。
 - 保证 graph[2] 包含非 0 元素。
 
-##解法一： 记忆化搜索 (DP)
+## 解法一： 记忆化搜索 (DP)
 
 解法一的总体思路的通过下一点状态推测当前点的状态。
 
@@ -194,7 +194,7 @@ class Solution {
 
    2. 如果 status\[i]\[j][0] = 2，即此步猫胜。则对于能一步到达该状态的所有可能的上一步状态 status\[i]\[graph\[j]][1] 都为 2，即上一步猫已经完全锁定胜局。
    
-      <img src="/Users/luojilab/Desktop/CatAndMouse/res/CatAndMouse/DFS1.2.png" alt="DFS1.2" style="zoom:50%;" />
+   <img src="../../res/CatAndMouse/DFS1.2.png" alt="DFS1.2" style="zoom:50%;" />
    
    3. 如果 status\[i]\[j][0] = 0，即此步未知（平局），则无法对上一步状态进行判断。
 2. 对于节点 status\[i]\[j][1] 来说，此时轮到猫行动，上一步轮到鼠行动：
@@ -338,7 +338,7 @@ public struct Queue<T> {
 
 空间复杂度：O(n^3), 队列可能最多存 O(n^2) 种状态，每种状态最多有 n 种转移的可能
 
-##解法三： 深度优先搜索 (DFS)
+## 解法三： 深度优先搜索 (DFS)
 
 思想和解法一完全一样，不同的是，我们这里用一栈(深度优先)，将所有非平局状态全部塞入，然后遍历每个队列元素，如果根据该元素能够判断其上一步状态的胜负，则将其上一步状态推入栈，否则出栈。如此循环往复，直到队列为空为止。
 
