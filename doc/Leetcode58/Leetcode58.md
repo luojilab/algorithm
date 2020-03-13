@@ -1,4 +1,4 @@
-# LeetCode58
+**# LeetCode58
 
 ## 原题
 
@@ -52,12 +52,12 @@ Explanation: 1,3,2,1
 
 先将 **ratings** 从左到右遍历一次，俩俩比较，如果右 rating > 左 rating，则说明右边孩子比左边孩子分数高，所以右边孩子应该比左边孩子多拿一个糖果。
 
-![6C3D3912-5CB6-4754-B9C5-606AC20A74DA set-w480](media/15837521521544/6C3D3912-5CB6-4754-B9C5-606AC20A74DA.png)
+![1](https://github.com/zhxyComing/algorithm/blob/master/res/Leetcode58/1.png)
 
 
 这样遍历完有个问题，我们只在右 rating > 左 rating 的情况下，给予右边的孩子更多的糖多，但却没有在左 rating > 右 rating 的情况，给予左边孩子更多的糖果。比如下面的例子：
 
-![B6491301-5041-495A-84CB-682CE1FBAD39 set-w480](media/15837521521544/B6491301-5041-495A-84CB-682CE1FBAD39.png)
+![2](https://github.com/zhxyComing/algorithm/blob/master/res/Leetcode58/2.png)
 
 
 ```
@@ -72,18 +72,17 @@ rating 中 2 明明比 1 大，却拿一样的糖果，这不公平！
 
 方法一样，继续俩俩比较，如果左 rating > 右 rating，则说明左边孩子比右边孩子分数高，所以应该比右边孩子多拿一个糖果。
 
-![79FF16CC-BA2B-429A-AE90-DE8D7697CE62 set-w400](media/15837521521544/79FF16CC-BA2B-429A-AE90-DE8D7697CE62.png)
-
+![3](https://github.com/zhxyComing/algorithm/blob/master/res/Leetcode58/3.png)
 
 
 很快我们发现了问题：经过第一次的遍历，对于左 rating > 右 rating 的情况，左边孩子的糖果有可能已经比右边孩子多了，这种情况已经满足要求，所以不做处理。
 
-![6C855254-AAC9-496D-A0DB-0CCD56F21E7 set-w480](media/15837521521544/6C855254-AAC9-496D-A0DB-0CCD56F21E7C.png)
+![4](https://github.com/zhxyComing/algorithm/blob/master/res/Leetcode58/4.png)
 
 
 但是，（经过第一次的遍历，对于左 rating > 右 rating 的情况）左边孩子的糖果有可能比右边孩子少或者一样，这样就需要将左边孩子的糖果值设定为右边孩子的糖果 + 1，才能满足要求。比如：
 
-![5F6E32D9-14F7-4C8E-AD10-FD7239FEF162 set-w480](media/15837521521544/5F6E32D9-14F7-4C8E-AD10-FD7239FEF162.png)
+![5](https://github.com/zhxyComing/algorithm/blob/master/res/Leetcode58/5.png)
 
 
 这样左右遍历之后，孩子的任意俩边均满足分数高、糖果多的最小要求。
@@ -142,7 +141,7 @@ rating =  {1，2，3，4，3，2，1}
 
 划分方式：
 
-![A375721A-4236-4585-A72A-31636D563109](media/15837521521544/A375721A-4236-4585-A72A-31636D563109.png)
+![6](https://github.com/zhxyComing/algorithm/blob/master/res/Leetcode58/6.png)
 
 现在从左到右遍历，**上述例子** 就可以简单理解为递增数列之和 + 递减数列之和。
 
@@ -220,7 +219,7 @@ rating =  {3，4，3，2}
 if (n >= pre) res += n + 1 - pre;
 ```
 
-![B5DE650F-EF45-46EE-A1C3-899B8C496D68](media/15837521521544/B5DE650F-EF45-46EE-A1C3-899B8C496D68.png)
+![7](https://github.com/zhxyComing/algorithm/blob/master/res/Leetcode58/7.png)
 
 
 上述例子，n = 2（n 阶等差数列），pre = 2（递增累加值）。
