@@ -426,7 +426,7 @@ You can assume that you can always reach the last index.
 
 ## Leetcode 算法
 
-58. **【Candy】** There are N children standing in a line. Each child is assigned a rating value.
+58. **[【Candy】](./doc/Leetcode58/Leetcode58.md)** There are N children standing in a line. Each child is assigned a rating value.
 
     You are giving candies to these children subjected to the following requirements:
 
