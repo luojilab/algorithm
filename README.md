@@ -16,27 +16,27 @@
 11. [多重背包问题](./doc/Dynamic_Programming/multiple_knapsack_problem.md)
 
 ## 贪心算法专题（2）
-12. [贪心算法](./doc/GreedyAlgorithm/greedy_algorithms.md)
-13. [贪心算法与动态规划问题的对比](./doc/Dynamic_Programming/summary.md)
+122. [贪心算法](./doc/GreedyAlgorithm/greedy_algorithms.md)
+132. [贪心算法与动态规划问题的对比](./doc/Dynamic_Programming/summary.md)
 
 ## 字符串查找算法（4）
-14. [朴素字符串匹配算法](./doc/String/naive-string-matching-algorithm/BF.md)
-15. [Rabin-Karp算法](./doc/String/Rabin-Karp/ReadMe.md)
-16. [利用有限自动机进行字符串匹配](./doc/String/fsm/fsm.md)
-17. [KMP算法图算法](./doc/KMP/readme.md)
+144. [朴素字符串匹配算法](./doc/String/naive-string-matching-algorithm/BF.md)
+154. [Rabin-Karp算法](./doc/String/Rabin-Karp/ReadMe.md)
+164. [利用有限自动机进行字符串匹配](./doc/String/fsm/fsm.md)
+174. [KMP算法图算法](./doc/KMP/readme.md)
 
 ## 图的算法（5）
-18. [图的基本概念](./doc/Graph/Basic/Concept.md)
-19. [单源最短路径](./doc/Drawable/DrawableShortPath.md)
-20. [Dijkstra算法](./doc/Graph/Dijkstra/Dijkstra算法.md)
-21. [所有结点对的最短路径问题](./doc/Graph/Floyd-Warshall/Floyd-Warshall.md)
-22. [最大流](./doc/Graph/MaximumFlow/MaximumFlow.md)
+188. [图的基本概念](./doc/Graph/Basic/Concept.md)
+198. [单源最短路径](./doc/Drawable/DrawableShortPath.md)
+208. [Dijkstra算法](./doc/Graph/Dijkstra/Dijkstra算法.md)
+218. [所有结点对的最短路径问题](./doc/Graph/Floyd-Warshall/Floyd-Warshall.md)
+228. [最大流](./doc/Graph/MaximumFlow/MaximumFlow.md)
 
 ## 多线程算法（1）
-23. [动态多线程基础 + 案例](./doc/Multithreading/动态多线程算法.md)
+233. [动态多线程基础 + 案例](./doc/Multithreading/动态多线程算法.md)
 
 ## Leetcode 算法
-24. [***【Remove Nth Node From End of List】***](./doc/Leetcode24/leetcode-24.md)  Given a linked list, remove the n-th node from the end of list and return its head.
+244. [***【Remove Nth Node From End of List】***](./doc/Leetcode24/leetcode-24.md)  Given a linked list, remove the n-th node from the end of list and return its head.
 
 Example:
 ```
@@ -53,9 +53,9 @@ Follow up:
 ```
 	Could you do this in one pass?
 ```
-25. ***[【Longest Substring Without Repeating Characters】](./doc/Leetcode25/leetcode-25.md)*** 给定一个字符串，找到最长的没有重复字符的子串. 
-26. [***【Longest Palindromic Substring】***](./doc/Leetcode26/Leetcode26.md) 给定一个字符串，找到最长的回文子串
-27. [***【Container With Most Water】***](./doc/Container/ContainerWithMostWater.md) 给定一个正整数数组，其组成的容器所能容纳的最大面积
+255. ***[【Longest Substring Without Repeating Characters】](./doc/Leetcode25/leetcode-25.md)*** 给定一个字符串，找到最长的没有重复字符的子串. 
+265. [***【Longest Palindromic Substring】***](./doc/Leetcode26/Leetcode26.md) 给定一个字符串，找到最长的回文子串
+275. [***【Container With Most Water】***](./doc/Container/ContainerWithMostWater.md) 给定一个正整数数组，其组成的容器所能容纳的最大面积
 ```
 给定：[1,8,6,2,5,4,8,3,7]
 ```
@@ -63,14 +63,14 @@ Follow up:
 ```
 组成的最大面积就是49
 ```
-28. *** 【[3Sum](./doc/3sum/3sum.md)】 *** 给定一个成员数量大于三的数组，找到三个元素a,b,c使a+b+c=0。找出所有可能的情况
+288. *** 【[3Sum](./doc/3sum/3sum.md)】 *** 给定一个成员数量大于三的数组，找到三个元素a,b,c使a+b+c=0。找出所有可能的情况
 
-29. ***【[Search in Rotated Sorted Array](./doc/SearchinRotatedSortedArray/search_in_rotated_sorted_array.md)】*** Suppose an array sorted in ascending order is rotated at some pivot unknown to you beforehand.```(i.e.[0,1,2,4,5,6,7]might become[4,5,6,7,0,1,2]).```
-You are given a target value to search. If found in the array return its index, otherwise return -1.
-You may assume no duplicate exists in the array.
-Your algorithm's runtime complexity must be in the order of&nbsp;O(logn).
+298. ***【[Search in Rotated Sorted Array](./doc/SearchinRotatedSortedArray/search_in_rotated_sorted_array.md)】*** Suppose an array sorted in ascending order is rotated at some pivot unknown to you beforehand.```(i.e.[0,1,2,4,5,6,7]might become[4,5,6,7,0,1,2]).```
+    You are given a target value to search. If found in the array return its index, otherwise return -1.
+    You may assume no duplicate exists in the array.
+    Your algorithm's runtime complexity must be in the order of&nbsp;O(logn).
 
-30. ***【[Combination Sum](./doc/Combination_Sum/readme.md)】*** Given a set of candidate numbers (candidates) (without duplicates) and a target number (target), find all unique combinations in candidates where the candidate numbers sums to target.The same repeated number may be chosen from candidates unlimited number of times.
+308. ***【[Combination Sum](./doc/Combination_Sum/readme.md)】*** Given a set of candidate numbers (candidates) (without duplicates) and a target number (target), find all unique combinations in candidates where the candidate numbers sums to target.The same repeated number may be chosen from candidates unlimited number of times.
 > Note:All numbers (including target) will be positive integers.The solution set must not contain duplicate combinations.
 
 Example:
@@ -82,8 +82,8 @@ Input :[2,3,6,7], target=7, A solution set is:
 ]
 ```
 
-31. ***【[Permutations II](./doc/Leetcode47/readme.md)】*** Given a collection of numbers that might contain duplicates, return all possible unique permutations.
-Example:
+311. ***【[Permutations II](./doc/Leetcode47/readme.md)】*** Given a collection of numbers that might contain duplicates, return all possible unique permutations.
+    Example:
 ```
 		Input: [1,1,2]
 		Output:
@@ -94,7 +94,7 @@ Example:
 		]
 ```
 
-32. ***【[Merge Intervals](./doc/Leetcode56/readme.md)】*** 给定区间的组合，然后合并相互覆盖的区间。输出结果
+322. ***【[Merge Intervals](./doc/Leetcode56/readme.md)】*** 给定区间的组合，然后合并相互覆盖的区间。输出结果
     Example:
 ```
 Input: [[1,3],[2,6],[8,10],[15,18]]
@@ -102,11 +102,11 @@ Output: [[1,6],[8,10],[15,18]]
 Explanation: Since intervals [1,3] and [2,6] overlaps, merge them into [1,6].
 ```
 
-33. ***[【Unique Paths II】](./doc/UniquePathsII/UniquePathsII.md)*** A robot is located at the top-left corner of a m x n grid (marked 'Start' in the diagram below).
-The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked 'Finish' in the diagram below).
-Now consider if some obstacles are added to the grids. How many unique paths would there be?
-![50ee09bddc06507fc3d53fa1e5986ca6.png](./res/cover/robot_maze.png)
-An obstacle and empty space is marked as 1 and 0 respectively in the grid.
+333. ***[【Unique Paths II】](./doc/UniquePathsII/UniquePathsII.md)*** A robot is located at the top-left corner of a m x n grid (marked 'Start' in the diagram below).
+    The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked 'Finish' in the diagram below).
+    Now consider if some obstacles are added to the grids. How many unique paths would there be?
+    ![50ee09bddc06507fc3d53fa1e5986ca6.png](./res/cover/robot_maze.png)
+    An obstacle and empty space is marked as 1 and 0 respectively in the grid.
 > Note: m and n will be at most 100.
 
 Example 1:
@@ -125,17 +125,17 @@ There are two ways to reach the bottom-right corner:
 2. Down -> Down -> Right -> Right
 ```
 
-34. ***[【Minimum Size Subarray Sum】](./doc/Leetcode209/leetcode-209.md)*** Given an array of n positive integers and a positive integer s, find the minimal length of a contiguous subarray of which the sum ≥ s. If there isn't one, return 0 instead.
-Example:
+344. ***[【Minimum Size Subarray Sum】](./doc/Leetcode209/leetcode-209.md)*** Given an array of n positive integers and a positive integer s, find the minimal length of a contiguous subarray of which the sum ≥ s. If there isn't one, return 0 instead.
+    Example:
 ```
 Input: s = 7, nums = [2,3,1,2,4,3]
 Output: 2
 Explanation: the subarray [4,3] has the minimal length under the problem constraint
 ```
 
-35. ***【Median of Two Sorted Arrays】*** There are two sorted arrays nums1 and nums2 of size m and n respectively.
-Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).
-You may assume nums1 and nums2 cannot be both empty.
+355. ***【Median of Two Sorted Arrays】*** There are two sorted arrays nums1 and nums2 of size m and n respectively.
+    Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).
+    You may assume nums1 and nums2 cannot be both empty.
 
 Example 1:
 ```
@@ -152,7 +152,7 @@ nums2 = [3, 4]
 The median is (2 + 3)/2 = 2.5
 ```
 
-36. ***【First Missing Positive】*** Given an unsorted integer array, find the smallest missing positive integer.
+366. ***[【First Missing Positive】](./doc/Leetcode41/Leetcode41.md)*** Given an unsorted integer array, find the smallest missing positive integer.
 
 Example 1:
 ```
@@ -171,9 +171,9 @@ Output: 1
 ```
 
 >Note:
-Your algorithm should run in O(n) time and uses constant extra space.
+>Your algorithm should run in O(n) time and uses constant extra space.
 
-37. ***【Trapping Rain Water】*** Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it is able to trap after raining.
+377. ***【Trapping Rain Water】*** Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it is able to trap after raining.
 
 ![a0b5725179e8d2e8540134afe72860be.png](./res/cover/rainwatertrap.png)
 
@@ -185,9 +185,9 @@ Input: [0,1,0,2,1,0,1,3,2,1,2,1]
 Output: 6
 ```
 
-38. N皇后问题
-39. 汉诺塔问题
-40. ***【Minimum Window Substring】*** Given a string S and a string T, find the minimum window in S which will contain all the characters in T in complexity O(n).
+388. N皇后问题
+398. 汉诺塔问题
+408. ***【Minimum Window Substring】*** Given a string S and a string T, find the minimum window in S which will contain all the characters in T in complexity O(n).
 
 Example:
 ```
@@ -195,16 +195,16 @@ Input: S = "ADOBECODEBANC", T = "ABC"
 Output: "BANC"
 ```
 >Note:
-· If there is no such window in S that covers all characters in T, return the empty string "".
-· If there is such window, you are guaranteed that there will always be only one unique minimum window in S.
+>· If there is no such window in S that covers all characters in T, return the empty string "".
+>· If there is such window, you are guaranteed that there will always be only one unique minimum window in S.
 
-41. 哈夫曼编码算法
-42. ***【LRU Cache】*** Design and implement a data structure for Least Recently Used (LRU) cache. It should support the following operations: get and put.
-get(key) - Get the value (will always be positive) of the key if the key exists in the cache, otherwise return -1.
-put(key, value) - Set or insert the value if the key is not already present. When the cache reached its capacity, it should invalidate the least recently used item before inserting a new item.
-Follow up:
-Could you do both operations in O(1) time complexity?
-Example:
+411. 哈夫曼编码算法
+421. ***【LRU Cache】*** Design and implement a data structure for Least Recently Used (LRU) cache. It should support the following operations: get and put.
+    get(key) - Get the value (will always be positive) of the key if the key exists in the cache, otherwise return -1.
+    put(key, value) - Set or insert the value if the key is not already present. When the cache reached its capacity, it should invalidate the least recently used item before inserting a new item.
+    Follow up:
+    Could you do both operations in O(1) time complexity?
+    Example:
 ```
 LRUCache cache = new LRUCache( 2 /* capacity */ );
 
@@ -219,14 +219,15 @@ cache.get(3);       // returns 3
 cache.get(4);       // returns 4
 ```
 
-43. ***【Longest Valid Parentheses】*** Given a string containing just the characters '(' and ')', find the length of the longest valid (well-formed) parentheses substring.
-Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
-Note: Given n will be a positive integer.
-Example 1:
-```	
-	Input: "(()"
-	Output: 2
-	Explanation: The longest valid parentheses substring is "()"
+43.  ***【Longest Valid Parentheses】*** Given a string containing just the characters '(' and ')', find the length of the longest valid (well-formed) parentheses substring.
+    Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
+    Note: Given n will be a positive integer.
+    Example 1:
+    ```
+    Input: "(()"
+    Output: 2
+    Explanation: The longest valid parentheses substring is "()"
+    ```
 ```
 Example 2:
 ```
@@ -340,7 +341,7 @@ Input:
 	  ['i','f','l','v']
 	]
 words = ["oath","pea","eat","rain"]
-	
+​	
 Output: ["eat","oath"]
 ```
 Note:
@@ -434,9 +435,9 @@ You can assume that you can always reach the last index.
     Children with a higher rating get more candies than their neighbors.
     What is the minimum candies you must give?
     
-    ```
+```
     Example 1:
-    
+
     Input: [1,0,2]
     Output: 5
     Explanation: You can allocate to the first, second and third child with 2, 1, 2 candies respectively.
@@ -445,11 +446,11 @@ You can assume that you can always reach the last index.
     Input: [1,2,2]
     Output: 4
     Explanation: You can allocate to the first, second and third child with 1, 2, 1 candies respectively. The third child gets 1 candy because it satisfies the above two conditions.
-    ```
-    
-    
+    ​```
 
-59. **【Find Peak Element】** A peak element is an element that is greater than its neighbors.
+​    
+
+59.  **【Find Peak Element】** A peak element is an element that is greater than its neighbors.
 
     Given an input array nums, where nums[i] ≠ nums[i+1], find a peak element and return its index.
 
@@ -459,12 +460,12 @@ You can assume that you can always reach the last index.
 
     ```
     Example 1:
-    
+
     Input: nums = [1,2,3,1]
     Output: 2
     Explanation: 3 is a peak element and your function should return the index number 2.
     Example 2:
-    
+
     Input: nums = [1,2,1,3,5,6,4]
     Output: 1 or 5 
     Explanation: Your function can return either index number 1 where the peak element is 2, 
@@ -475,19 +476,19 @@ You can assume that you can always reach the last index.
     >
     > Your solution should be in logarithmic complexity.
 
-60. **【House Robber II】** You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed. All houses at this place are arranged in a circle. That means the first house is the neighbor of the last one. Meanwhile, adjacent houses have security system connected and it will automatically contact the police if two adjacent houses were broken into on the same night.
+60.  **【House Robber II】** You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed. All houses at this place are arranged in a circle. That means the first house is the neighbor of the last one. Meanwhile, adjacent houses have security system connected and it will automatically contact the police if two adjacent houses were broken into on the same night.
 
     Given a list of non-negative integers representing the amount of money of each house, determine the maximum amount of money you can rob tonight without alerting the police.
 
     ```
     Example 1:
-    
+
     Input: [2,3,2]
     Output: 3
     Explanation: You cannot rob house 1 (money = 2) and then rob house 3 (money = 2),
                  because they are adjacent houses.
     Example 2:
-    
+
     Input: [1,2,3,1]
     Output: 4
     Explanation: Rob house 1 (money = 1) and then rob house 3 (money = 3).
@@ -495,7 +496,7 @@ You can assume that you can always reach the last index.
     ```
 
 
-61. **[【Min Stack】](./doc/Leetcode155/Leetcode155.md)** Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
+61.  **[【Min Stack】](./doc/Leetcode155/Leetcode155.md)** Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 
     - push(x) -- Push element x onto stack.
     - pop() -- Removes the element on top of the stack.
@@ -514,8 +515,8 @@ You can assume that you can always reach the last index.
     minStack.top();      --> Returns 0.
     minStack.getMin();   --> Returns -2.
     ```
-    
-62. **[【Cat and Mouse】](./doc/CatAndMouse/CatAndMouse.md)** A game on an **undirected** graph is played by two players, Mouse and Cat, who alternate turns.
+
+62.  **[【Cat and Mouse】](./doc/CatAndMouse/CatAndMouse.md)** A game on an **undirected** graph is played by two players, Mouse and Cat, who alternate turns.
 
     The graph is given as follows: `graph[a]` is a list of all nodes `b` such that `ab` is an edge of the graph.
 
@@ -546,7 +547,6 @@ You can assume that you can always reach the last index.
       0
     ```
 
-    
 
 
 
