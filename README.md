@@ -30,13 +30,13 @@
 19. [单源最短路径](./doc/Drawable/DrawableShortPath.md)
 20. [Dijkstra算法](./doc/Graph/Dijkstra/Dijkstra算法.md)
 21. [所有结点对的最短路径问题](./doc/Graph/Floyd-Warshall/Floyd-Warshall.md)
-22. 最大流
+22. [最大流](./doc/Graph/MaximumFlow/MaximumFlow.md)
 
 ## 多线程算法（1）
-23. 动态多线程基础 + 案例
+23. [动态多线程基础 + 案例](./doc/Multithreading/动态多线程算法.md)
 
 ## Leetcode 算法
-24. ***【Remove Nth Node From End of List】***  Given a linked list, remove the n-th node from the end of list and return its head.
+24. [***【Remove Nth Node From End of List】***](./doc/Leetcode24/leetcode-24.md)  Given a linked list, remove the n-th node from the end of list and return its head.
 
 Example:
 ```
@@ -53,9 +53,9 @@ Follow up:
 ```
 	Could you do this in one pass?
 ```
-25. ***【Longest Substring Without Repeating Characters】*** 给定一个字符串，找到最长的没有重复字符的子串. 
-26. ***【Longest Palindromic Substring】*** 给定一个字符串，找到最长的回文子串
-27. ***【Container With Most Water】*** 给定一个正整数数组，其组成的容器所能容纳的最大面积
+25. ***[【Longest Substring Without Repeating Characters】](./doc/Leetcode25/leetcode-25.md)*** 给定一个字符串，找到最长的没有重复字符的子串. 
+26. [***【Longest Palindromic Substring】***](./doc/Leetcode26/Leetcode26.md) 给定一个字符串，找到最长的回文子串
+27. [***【Container With Most Water】***](./doc/Container/ContainerWithMostWater.md) 给定一个正整数数组，其组成的容器所能容纳的最大面积
 ```
 给定：[1,8,6,2,5,4,8,3,7]
 ```
@@ -63,9 +63,9 @@ Follow up:
 ```
 组成的最大面积就是49
 ```
-28. ***【3Sum】*** 给定一个成员数量大于三的数组，找到三个元素a,b,c使a+b+c=0。找出所有可能的情况
+28. *** 【[3Sum](./doc/3sum/3sum.md)】 *** 给定一个成员数量大于三的数组，找到三个元素a,b,c使a+b+c=0。找出所有可能的情况
 
-29. ***【Search in Rotated Sorted Array】*** Suppose an array sorted in ascending order is rotated at some pivot unknown to you beforehand.```(i.e.[0,1,2,4,5,6,7]might become[4,5,6,7,0,1,2]).```
+29. ***【[Search in Rotated Sorted Array](./doc/SearchinRotatedSortedArray/search_in_rotated_sorted_array.md)】*** Suppose an array sorted in ascending order is rotated at some pivot unknown to you beforehand.```(i.e.[0,1,2,4,5,6,7]might become[4,5,6,7,0,1,2]).```
 You are given a target value to search. If found in the array return its index, otherwise return -1.
 You may assume no duplicate exists in the array.
 Your algorithm's runtime complexity must be in the order of&nbsp;O(logn).
@@ -82,7 +82,7 @@ Input :[2,3,6,7], target=7, A solution set is:
 ]
 ```
 
-31. ***【Permutations II】*** Given a collection of numbers that might contain duplicates, return all possible unique permutations.
+31. ***【[Permutations II](./doc/Leetcode47/readme.md)】*** Given a collection of numbers that might contain duplicates, return all possible unique permutations.
 Example:
 ```
 		Input: [1,1,2]
@@ -94,7 +94,7 @@ Example:
 		]
 ```
 
-32. ***【Merge Intervals】*** 给定区间的组合，然后合并相互覆盖的区间。输出结果
+32. ***【[Merge Intervals](./doc/Leetcode56/readme.md)】*** 给定区间的组合，然后合并相互覆盖的区间。输出结果
     Example:
 ```
 Input: [[1,3],[2,6],[8,10],[15,18]]
@@ -102,7 +102,7 @@ Output: [[1,6],[8,10],[15,18]]
 Explanation: Since intervals [1,3] and [2,6] overlaps, merge them into [1,6].
 ```
 
-33. ***【Unique Paths II】*** A robot is located at the top-left corner of a m x n grid (marked 'Start' in the diagram below).
+33. ***[【Unique Paths II】](./doc/UniquePathsII/UniquePathsII.md)*** A robot is located at the top-left corner of a m x n grid (marked 'Start' in the diagram below).
 The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked 'Finish' in the diagram below).
 Now consider if some obstacles are added to the grids. How many unique paths would there be?
 ![50ee09bddc06507fc3d53fa1e5986ca6.png](./res/cover/robot_maze.png)
@@ -125,7 +125,7 @@ There are two ways to reach the bottom-right corner:
 2. Down -> Down -> Right -> Right
 ```
 
-34. ***【Minimum Size Subarray Sum】*** Given an array of n positive integers and a positive integer s, find the minimal length of a contiguous subarray of which the sum ≥ s. If there isn't one, return 0 instead.
+34. ***[【Minimum Size Subarray Sum】](./doc/Leetcode209/leetcode-209.md)*** Given an array of n positive integers and a positive integer s, find the minimal length of a contiguous subarray of which the sum ≥ s. If there isn't one, return 0 instead.
 Example:
 ```
 Input: s = 7, nums = [2,3,1,2,4,3]
@@ -152,7 +152,7 @@ nums2 = [3, 4]
 The median is (2 + 3)/2 = 2.5
 ```
 
-36. ***【First Missing Positive】*** Given an unsorted integer array, find the smallest missing positive integer.
+36. ***[【First Missing Positive】](./doc/Leetcode41/Leetcode41.md)*** Given an unsorted integer array, find the smallest missing positive integer.
 
 Example 1:
 ```
@@ -185,7 +185,7 @@ Input: [0,1,0,2,1,0,1,3,2,1,2,1]
 Output: 6
 ```
 
-38. N皇后问题
+38.  ***[【N皇后问题】](./doc/Leetcode38/Nquee.md)***
 39. 汉诺塔问题
 40. ***【Minimum Window Substring】*** Given a string S and a string T, find the minimum window in S which will contain all the characters in T in complexity O(n).
 
@@ -423,3 +423,132 @@ You can assume that you can always reach the last index.
 ## 加密算法专题
 56. AES
 57. RSA
+
+## Leetcode 算法
+
+58. **[【Candy】](./doc/Leetcode58/Leetcode58.md)** There are N children standing in a line. Each child is assigned a rating value.
+
+    You are giving candies to these children subjected to the following requirements:
+
+    Each child must have at least one candy.
+    Children with a higher rating get more candies than their neighbors.
+    What is the minimum candies you must give?
+    
+    ```
+    Example 1:
+    
+    Input: [1,0,2]
+    Output: 5
+    Explanation: You can allocate to the first, second and third child with 2, 1, 2 candies respectively.
+    Example 2:
+    
+    Input: [1,2,2]
+    Output: 4
+    Explanation: You can allocate to the first, second and third child with 1, 2, 1 candies respectively. The third child gets 1 candy because it satisfies the above two conditions.
+    ```
+    
+    
+
+59. **【Find Peak Element】** A peak element is an element that is greater than its neighbors.
+
+    Given an input array nums, where nums[i] ≠ nums[i+1], find a peak element and return its index.
+
+    The array may contain multiple peaks, in that case return the index to any one of the peaks is fine.
+
+    You may imagine that nums[-1] = nums[n] = -∞.
+
+    ```
+    Example 1:
+    
+    Input: nums = [1,2,3,1]
+    Output: 2
+    Explanation: 3 is a peak element and your function should return the index number 2.
+    Example 2:
+    
+    Input: nums = [1,2,1,3,5,6,4]
+    Output: 1 or 5 
+    Explanation: Your function can return either index number 1 where the peak element is 2, 
+                 or index number 5 where the peak element is 6.
+    ```
+
+    > Note:
+    >
+    > Your solution should be in logarithmic complexity.
+
+60. **【House Robber II】** You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed. All houses at this place are arranged in a circle. That means the first house is the neighbor of the last one. Meanwhile, adjacent houses have security system connected and it will automatically contact the police if two adjacent houses were broken into on the same night.
+
+    Given a list of non-negative integers representing the amount of money of each house, determine the maximum amount of money you can rob tonight without alerting the police.
+
+    ```
+    Example 1:
+    
+    Input: [2,3,2]
+    Output: 3
+    Explanation: You cannot rob house 1 (money = 2) and then rob house 3 (money = 2),
+                 because they are adjacent houses.
+    Example 2:
+    
+    Input: [1,2,3,1]
+    Output: 4
+    Explanation: Rob house 1 (money = 1) and then rob house 3 (money = 3).
+                 Total amount you can rob = 1 + 3 = 4.
+    ```
+
+
+61. **[【Min Stack】](./doc/Leetcode155/Leetcode155.md)** Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
+
+    - push(x) -- Push element x onto stack.
+    - pop() -- Removes the element on top of the stack.
+    - top() -- Get the top element.
+    - getMin() -- Retrieve the minimum element in the stack.
+
+    **Example:**
+
+    ```
+    MinStack minStack = new MinStack();
+    minStack.push(-2);
+    minStack.push(0);
+    minStack.push(-3);
+    minStack.getMin();   --> Returns -3.
+    minStack.pop();
+    minStack.top();      --> Returns 0.
+    minStack.getMin();   --> Returns -2.
+    ```
+    
+62. **[【Cat and Mouse】](./doc/CatAndMouse/CatAndMouse.md)** A game on an **undirected** graph is played by two players, Mouse and Cat, who alternate turns.
+
+    The graph is given as follows: `graph[a]` is a list of all nodes `b` such that `ab` is an edge of the graph.
+
+    Mouse starts at node 1 and goes first, Cat starts at node 2 and goes second, and there is a Hole at node 0.
+
+    During each player's turn, they **must** travel along one edge of the graph that meets where they are. For example, if the Mouse is at node `1`, it **must** travel to any node in `graph[1]`.
+
+    Additionally, it is not allowed for the Cat to travel to the Hole (node 0.)
+
+    Then, the game can end in 3 ways:
+
+    - If ever the Cat occupies the same node as the Mouse, the Cat wins.
+    - If ever the Mouse reaches the Hole, the Mouse wins.
+    - If ever a position is repeated (ie. the players are in the same position as a previous turn, and it is the same player's turn to move), the game is a draw.
+
+    Given a `graph`, and assuming both players play optimally, return `1` if the game is won by Mouse, `2` if the game is won by Cat, and `0` if the game is a draw.
+
+    **Example 1:**
+
+    ```
+    Input: [[2,5],[3],[0,4,5],[1,4,5],[2,3],[0,2,3]]
+    Output: 0
+    Explanation:
+    4---3---1
+    |   |
+    2---5
+     \ /
+      0
+    ```
+
+    
+
+
+
+> 本算法目录中Leetcode章节中的算法来自[leetcode](https://leetcode-cn.com/)。请勿商业使用！
+
