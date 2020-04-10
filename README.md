@@ -185,7 +185,7 @@ Input: [0,1,0,2,1,0,1,3,2,1,2,1]
 Output: 6
 ```
 
-38. N皇后问题
+38.  ***[【N皇后问题】](./doc/Leetcode38/Nquee.md)***
 39. 汉诺塔问题
 40. ***【Minimum Window Substring】*** Given a string S and a string T, find the minimum window in S which will contain all the characters in T in complexity O(n).
 
@@ -426,7 +426,7 @@ You can assume that you can always reach the last index.
 
 ## Leetcode 算法
 
-58. **【Candy】** There are N children standing in a line. Each child is assigned a rating value.
+58. **[【Candy】](./doc/Leetcode58/Leetcode58.md)** There are N children standing in a line. Each child is assigned a rating value.
 
     You are giving candies to these children subjected to the following requirements:
 
