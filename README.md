@@ -152,7 +152,7 @@ nums2 = [3, 4]
 The median is (2 + 3)/2 = 2.5
 ```
 
-36. ***[【First Missing Positive】](./doc/Leetcode41/Leetcode41.md)*** Given an unsorted integer array, find the smallest missing positive integer.
+36. ***【First Missing Positive】*** Given an unsorted integer array, find the smallest missing positive integer.
 
 Example 1:
 ```
