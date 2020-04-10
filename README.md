@@ -173,7 +173,7 @@ Output: 1
 >Note:
 Your algorithm should run in O(n) time and uses constant extra space.
 
-37. ***【Trapping Rain Water】*** Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it is able to trap after raining.
+37. ***[【Trapping Rain Water】](./doc/Leetcode42/readme.md)*** Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it is able to trap after raining.
 
 ![a0b5725179e8d2e8540134afe72860be.png](./res/cover/rainwatertrap.png)
 
