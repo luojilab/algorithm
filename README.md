@@ -63,7 +63,8 @@ Follow up:
 ```
 组成的最大面积就是49
 ```
-28. *** 【[3Sum](./doc/3sum/3sum.md)】 *** 给定一个成员数量大于三的数组，找到三个元素a,b,c使a+b+c=0。找出所有可能的情况
+
+28. ***  [【3Sum】](./doc/3sum/3sum.md)  *** 给定一个成员数量大于三的数组，找到三个元素a,b,c使a+b+c=0。找出所有可能的情况
 
 29. ***【[Search in Rotated Sorted Array](./doc/SearchinRotatedSortedArray/search_in_rotated_sorted_array.md)】*** Suppose an array sorted in ascending order is rotated at some pivot unknown to you beforehand.```(i.e.[0,1,2,4,5,6,7]might become[4,5,6,7,0,1,2]).```
 You are given a target value to search. If found in the array return its index, otherwise return -1.
@@ -133,7 +134,7 @@ Output: 2
 Explanation: the subarray [4,3] has the minimal length under the problem constraint
 ```
 
-35. ***【Median of Two Sorted Arrays】*** There are two sorted arrays nums1 and nums2 of size m and n respectively.
+35. ***[【Median of Two Sorted Arrays】](./doc/MedianOfTwoSortedArrays/doc.md)*** There are two sorted arrays nums1 and nums2 of size m and n respectively.
 Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).
 You may assume nums1 and nums2 cannot be both empty.
 
