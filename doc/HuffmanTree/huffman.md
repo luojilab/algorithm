@@ -239,7 +239,8 @@ public class MainActivity extends AppCompatActivity {
 2020-05-06 13:46:13.011 14823-14823/com.igetget.myapplication I/System.out: NoteValue=4 (empty,empty)
 ```
 
-五、哈弗曼编码
+## 五、哈弗曼编码
+
 根据哈夫曼树可以解决报文编码的问题。
 
 假设需要把一个字符串，如“abcdabcaba”进行编码，将它转换为唯一的二进制码，但是要求转换出来的二进制码的长度最小。
