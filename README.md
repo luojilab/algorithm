@@ -200,7 +200,7 @@ Output: "BANC"
 · If there is such window, you are guaranteed that there will always be only one unique minimum window in S.
 
 41. [哈夫曼编码算法](./doc/HuffmanTree/huffman.md)
-42. ***【LRU Cache】*** Design and implement a data structure for Least Recently Used (LRU) cache. It should support the following operations: get and put.
+42. ***[【LRU Cache】](./doc/Lru/Lru.md)*** Design and implement a data structure for Least Recently Used (LRU) cache. It should support the following operations: get and put.
 get(key) - Get the value (will always be positive) of the key if the key exists in the cache, otherwise return -1.
 put(key, value) - Set or insert the value if the key is not already present. When the cache reached its capacity, it should invalidate the least recently used item before inserting a new item.
 Follow up:
