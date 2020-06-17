@@ -220,7 +220,7 @@ cache.get(3);       // returns 3
 cache.get(4);       // returns 4
 ```
 
-43. ***【Longest Valid Parentheses】*** Given a string containing just the characters '(' and ')', find the length of the longest valid (well-formed) parentheses substring.
+43. ***[【Longest Valid Parentheses】](./doc/LongestValidParentheses/LongestValidParentheses.md)*** Given a string containing just the characters '(' and ')', find the length of the longest valid (well-formed) parentheses substring.
 Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
 Note: Given n will be a positive integer.
 Example 1:
