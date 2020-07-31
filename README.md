@@ -289,7 +289,7 @@ exention -> exection (replace 'n' with 'c')
 exection -> execution (insert 'u')
 ```
 
-47. ***【Number of Islands】*** Given a 2d grid map of '1's (land) and '0's (water), count the number of islands. An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water.
+47. ***【[Number of Islands](./doc/numIsLands/算法222.md)】*** Given a 2d grid map of '1's (land) and '0's (water), count the number of islands. An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water.
 Example 1:
 ```
 Input:
