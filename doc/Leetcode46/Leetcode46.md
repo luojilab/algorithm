@@ -45,7 +45,7 @@ m：字符串1的长度
 
 n：字符串2的长度
 
-![](..\..\res\Leetcode46\EditDistance11.png)
+![](../../res/Leetcode46/EditDistance11.png)
 
 1.如果两个字符串的最后一个字符相同，则什么也不做。 忽略最后一个字符并获得剩余字符串的计数。 因此，我们递归长度为m-1和n-1。
 
@@ -91,7 +91,7 @@ int editDist(string word1 , string word2, int m, int n) {
 
 上述解决方案的时间复杂度是指数的。 在最坏的情况下，我们可能最终会执行O（3<sup>m</sup>）操作，假设m>n，如果m < n就是O（3<sup>n</sup>）。 如果两个字符串的字符都不匹配，则会发生最坏的情况。 下面是最坏情况的递归调用图。
 
-![](..\..\res\Leetcode46\EditDistance1.png)
+![](../../res/Leetcode46/EditDistance1.png)
 
 我们可以看到，许多子问题都被重复的解决，例如，eD（2，2）被调用了三次。 由于再次调用了相同的问题，因此此问题具有“重叠子问题”属性。 因此，动态规划问题需要有两个属性（重叠子问题属性、最优子结构属性）。最优子结构属性是什么？“编辑距离”问题的最优子结构就是当字符串1的字符扫描到0个字符和字符串2字符扫描到0个字符就是最优的子结构，所以像其他典型的动态编程（DP）问题一样，可以通过构造一个存储子问题结果的临时数组来避免相同子问题的重新计算。
 
@@ -187,23 +187,23 @@ $$
 
 **空间复杂度优化**
 
-![](..\..\res\Leetcode46\EditDistance2.png)
+![](../../res/Leetcode46/EditDistance2.png)
 
-![](..\..\res\Leetcode46\EditDistance3.png)
+![](../../res/Leetcode46/EditDistance3.png)
 
-![](..\..\res\Leetcode46\EditDistance4.png)
+![](../../res/Leetcode46/EditDistance4.png)
 
-![](..\..\res\Leetcode46\EditDistance5.png)
+![](../../res/Leetcode46/EditDistance5.png)
 
-![](..\..\res\Leetcode46\EditDistance6.png)
+![](../../res/Leetcode46/EditDistance6.png)
 
-![](..\..\res\Leetcode46\EditDistance7.png)
+![](../../res/Leetcode46/EditDistance7.png)
 
-![](..\..\res\Leetcode46\EditDistance8.png)
+![](../../res/Leetcode46/EditDistance8.png)
 
-![](..\..\res\Leetcode46\EditDistance9.png)
+![](../../res/Leetcode46/EditDistance9.png)
 
-![](..\..\res\Leetcode46\EditDistance10.png)
+![](../../res/Leetcode46/EditDistance10.png)
 
 ```
 int editDist(string word1, string word2) { 
