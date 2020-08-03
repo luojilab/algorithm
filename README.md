@@ -263,7 +263,7 @@ Output: [3,5]
 > 1. The order of the result is not important. So in the above example, [5, 3] is also correct.
 > 2. Your algorithm should run in linear runtime complexity. Could you implement it using only constant space complexity?
 
-46. ***【Edit Distance】(./doc/Leetcode46/Leetcode46.md)*** Given two words word1 and word2, find the minimum number of operations required to convert word1 to word2.
+46. ***[【Edit Distance】](./doc/Leetcode46/Leetcode46.md)*** Given two words word1 and word2, find the minimum number of operations required to convert word1 to word2.
 You have the following 3 operations permitted on a word:
     1. Insert a character
     2. Delete a character
