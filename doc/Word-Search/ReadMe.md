@@ -91,7 +91,7 @@ board =
 
 第二种 DFS （回溯 + 剪枝）
 
-![](../../../res/Word-Search/image-20200811161319532.png)
+![1](../../../res/Word-Search/image-20200811161319532.png)
 
 
 
@@ -133,9 +133,9 @@ class Solution {
 }
 ```
 
-![](../../../res/Word-Search/image-20200811191041684.png)
+![1](../../../res/Word-Search/image-20200811191041684.png)
 
-![](../../../res/Word-Search/image-20200811175425523.png)
+![1](../../../res/Word-Search/image-20200811175425523.png)
 
 ```swift
 class Solution {
@@ -209,13 +209,13 @@ trie树常用于搜索提示。如当输入一个网址，可以自动搜索出�
 
 简单介绍一下 前缀树
 
-![](../../../res/Word-Search/image-20200814104218237.png)
+![1](../../../res/Word-Search/image-20200814104218237.png)
 
 
 大概的数据结构是这个样子滴
 
 
-![](../../../res/Word-Search/image-20200813154159496.png)
+![1](../../../res/Word-Search/image-20200813154159496.png)
 
 
 
