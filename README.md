@@ -63,7 +63,8 @@ Follow up:
 ```
 组成的最大面积就是49
 ```
-28. *** 【[3Sum](./doc/3sum/3sum.md)】 *** 给定一个成员数量大于三的数组，找到三个元素a,b,c使a+b+c=0。找出所有可能的情况
+
+28. ***  [【3Sum】](./doc/3sum/3sum.md)  *** 给定一个成员数量大于三的数组，找到三个元素a,b,c使a+b+c=0。找出所有可能的情况
 
 29. ***【[Search in Rotated Sorted Array](./doc/SearchinRotatedSortedArray/search_in_rotated_sorted_array.md)】*** Suppose an array sorted in ascending order is rotated at some pivot unknown to you beforehand.```(i.e.[0,1,2,4,5,6,7]might become[4,5,6,7,0,1,2]).```
 You are given a target value to search. If found in the array return its index, otherwise return -1.
@@ -102,7 +103,7 @@ Output: [[1,6],[8,10],[15,18]]
 Explanation: Since intervals [1,3] and [2,6] overlaps, merge them into [1,6].
 ```
 
-33. ***【Unique Paths II】*** A robot is located at the top-left corner of a m x n grid (marked 'Start' in the diagram below).
+33. ***[【Unique Paths II】](./doc/UniquePathsII/UniquePathsII.md)*** A robot is located at the top-left corner of a m x n grid (marked 'Start' in the diagram below).
 The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked 'Finish' in the diagram below).
 Now consider if some obstacles are added to the grids. How many unique paths would there be?
 ![50ee09bddc06507fc3d53fa1e5986ca6.png](./res/cover/robot_maze.png)
@@ -125,7 +126,7 @@ There are two ways to reach the bottom-right corner:
 2. Down -> Down -> Right -> Right
 ```
 
-34. ***【Minimum Size Subarray Sum】*** Given an array of n positive integers and a positive integer s, find the minimal length of a contiguous subarray of which the sum ≥ s. If there isn't one, return 0 instead.
+34. ***[【Minimum Size Subarray Sum】](./doc/Leetcode209/leetcode-209.md)*** Given an array of n positive integers and a positive integer s, find the minimal length of a contiguous subarray of which the sum ≥ s. If there isn't one, return 0 instead.
 Example:
 ```
 Input: s = 7, nums = [2,3,1,2,4,3]
@@ -133,7 +134,7 @@ Output: 2
 Explanation: the subarray [4,3] has the minimal length under the problem constraint
 ```
 
-35. ***【Median of Two Sorted Arrays】*** There are two sorted arrays nums1 and nums2 of size m and n respectively.
+35. ***[【Median of Two Sorted Arrays】](./doc/MedianOfTwoSortedArrays/doc.md)*** There are two sorted arrays nums1 and nums2 of size m and n respectively.
 Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).
 You may assume nums1 and nums2 cannot be both empty.
 
@@ -152,7 +153,7 @@ nums2 = [3, 4]
 The median is (2 + 3)/2 = 2.5
 ```
 
-36. ***【First Missing Positive】*** Given an unsorted integer array, find the smallest missing positive integer.
+36. ***[【First Missing Positive】](./doc/Leetcode41/Leetcode41.md)*** Given an unsorted integer array, find the smallest missing positive integer.
 
 Example 1:
 ```
@@ -173,7 +174,7 @@ Output: 1
 >Note:
 Your algorithm should run in O(n) time and uses constant extra space.
 
-37. ***【Trapping Rain Water】*** Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it is able to trap after raining.
+37. ***[【Trapping Rain Water】](./doc/Leetcode42/readme.md)*** Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it is able to trap after raining.
 
 ![a0b5725179e8d2e8540134afe72860be.png](./res/cover/rainwatertrap.png)
 
@@ -185,9 +186,9 @@ Input: [0,1,0,2,1,0,1,3,2,1,2,1]
 Output: 6
 ```
 
-38. N皇后问题
-39. 汉诺塔问题
-40. ***【Minimum Window Substring】*** Given a string S and a string T, find the minimum window in S which will contain all the characters in T in complexity O(n).
+38.  ***[【N皇后问题】](./doc/Leetcode38/Nquee.md)***
+39. [汉诺塔问题](./doc/Hanoi/ReadMe.md)
+40. ***[【Minimum Window Substring】](./doc/MinimumWindowSubstring/ReadMe.md)*** Given a string S and a string T, find the minimum window in S which will contain all the characters in T in complexity O(n).
 
 Example:
 ```
@@ -198,8 +199,8 @@ Output: "BANC"
 · If there is no such window in S that covers all characters in T, return the empty string "".
 · If there is such window, you are guaranteed that there will always be only one unique minimum window in S.
 
-41. 哈夫曼编码算法
-42. ***【LRU Cache】*** Design and implement a data structure for Least Recently Used (LRU) cache. It should support the following operations: get and put.
+41. [哈夫曼编码算法](./doc/HuffmanTree/huffman.md)
+42. ***[【LRU Cache】](./doc/Lru/Lru.md)*** Design and implement a data structure for Least Recently Used (LRU) cache. It should support the following operations: get and put.
 get(key) - Get the value (will always be positive) of the key if the key exists in the cache, otherwise return -1.
 put(key, value) - Set or insert the value if the key is not already present. When the cache reached its capacity, it should invalidate the least recently used item before inserting a new item.
 Follow up:
@@ -219,7 +220,7 @@ cache.get(3);       // returns 3
 cache.get(4);       // returns 4
 ```
 
-43. ***【Longest Valid Parentheses】*** Given a string containing just the characters '(' and ')', find the length of the longest valid (well-formed) parentheses substring.
+43. ***[【Longest Valid Parentheses】](./doc/LongestValidParentheses/LongestValidParentheses.md)*** Given a string containing just the characters '(' and ')', find the length of the longest valid (well-formed) parentheses substring.
 Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
 Note: Given n will be a positive integer.
 Example 1:
@@ -235,7 +236,7 @@ Example 2:
 	Explanation: The longest valid parentheses substring is "()()"
 ```
 
-44. ***【Best Time to Buy and Sell Stock】*** Say you have an array for which the ith element is the price of a given stock on day i.
+44. ***[【Best Time to Buy and Sell Stock】](./doc/leetcode44/股票买卖.md)*** Say you have an array for which the ith element is the price of a given stock on day i.
 If you were only permitted to complete at most one transaction (i.e., buy one and sell one share of the stock), design an algorithm to find the maximum profit.
 Note that you cannot sell a stock before you buy one.
 Example 1:
@@ -262,7 +263,7 @@ Output: [3,5]
 > 1. The order of the result is not important. So in the above example, [5, 3] is also correct.
 > 2. Your algorithm should run in linear runtime complexity. Could you implement it using only constant space complexity?
 
-46. ***【Edit Distance】*** Given two words word1 and word2, find the minimum number of operations required to convert word1 to word2.
+46. ***[【Edit Distance】](./doc/Leetcode46/Leetcode46.md)*** Given two words word1 and word2, find the minimum number of operations required to convert word1 to word2.
 You have the following 3 operations permitted on a word:
     1. Insert a character
     2. Delete a character
@@ -426,7 +427,7 @@ You can assume that you can always reach the last index.
 
 ## Leetcode 算法
 
-58. **【Candy】** There are N children standing in a line. Each child is assigned a rating value.
+58. **[【Candy】](./doc/Leetcode58/Leetcode58.md)** There are N children standing in a line. Each child is assigned a rating value.
 
     You are giving candies to these children subjected to the following requirements:
 
@@ -449,7 +450,7 @@ You can assume that you can always reach the last index.
     
     
 
-59. **【Find Peak Element】** A peak element is an element that is greater than its neighbors.
+59. **[【Find Peak Element】](./doc/Leetcode59/Leetcode59.md)** A peak element is an element that is greater than its neighbors.
 
     Given an input array nums, where nums[i] ≠ nums[i+1], find a peak element and return its index.
 
@@ -495,7 +496,7 @@ You can assume that you can always reach the last index.
     ```
 
 
-61. **【Min Stack】** Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
+61. **[【Min Stack】](./doc/Leetcode155/Leetcode155.md)** Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 
     - push(x) -- Push element x onto stack.
     - pop() -- Removes the element on top of the stack.
@@ -515,7 +516,7 @@ You can assume that you can always reach the last index.
     minStack.getMin();   --> Returns -2.
     ```
     
-62. **【Cat and Mouse】**A game on an **undirected** graph is played by two players, Mouse and Cat, who alternate turns.
+62. **[【Cat and Mouse】](./doc/CatAndMouse/CatAndMouse.md)** A game on an **undirected** graph is played by two players, Mouse and Cat, who alternate turns.
 
     The graph is given as follows: `graph[a]` is a list of all nodes `b` such that `ab` is an edge of the graph.
 
