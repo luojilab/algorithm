@@ -133,9 +133,9 @@ class Solution {
 }
 ```
 
-![](../../../res/Tree/Word-Search/image-20200811191041684.png)
+![](../../../res/Word-Search/image-20200811191041684.png)
 
-![](../../../res/Tree/Word-Search/image-20200811175425523.png)
+![](../../../res/Word-Search/image-20200811175425523.png)
 
 ```swift
 class Solution {
@@ -216,7 +216,7 @@ trie树常用于搜索提示。如当输入一个网址，可以自动搜索出�
 大概的数据结构是这个样子滴
 
 
-![](../../../res/Tree/Word-Search/image-20200813154159496.png)
+![](../../../res/Word-Search/image-20200813154159496.png)
 
 
 
