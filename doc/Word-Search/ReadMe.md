@@ -91,7 +91,7 @@ board =
 
 第二种 DFS （回溯 + 剪枝）
 
-<img src="/Users/smallbei/Library/Application Support/typora-user-images/image-20200811161319532.png" alt="image-20200811161319532" style="zoom: 33%;" />
+![](../../../res/Word-Search/image-20200811161319532.png)
 
 
 
@@ -209,8 +209,7 @@ trie树常用于搜索提示。如当输入一个网址，可以自动搜索出�
 
 简单介绍一下 前缀树
 
-<img src="images/image-20200814104218237.png" alt="image-20200814104218237" style="zoom:33%;" />
-
+![](../../../res/Word-Search/image-20200814104218237.png)
 
 
 大概的数据结构是这个样子滴
