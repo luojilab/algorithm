@@ -133,9 +133,9 @@ class Solution {
 }
 ```
 
-![](../../../res/Tree/Word Search/image-20200811191041684.png)
+![](../../../res/Tree/Word-Search/image-20200811191041684.png)
 
-![](../../../res/Tree/Word Search/image-20200811175425523.png)
+![](../../../res/Tree/Word-Search/image-20200811175425523.png)
 
 ```swift
 class Solution {
