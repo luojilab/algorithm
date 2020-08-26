@@ -290,7 +290,7 @@ exention -> exection (replace 'n' with 'c')
 exection -> execution (insert 'u')
 ```
 
-47. ***【Number of Islands】*** Given a 2d grid map of '1's (land) and '0's (water), count the number of islands. An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water.
+47. ***【[Number of Islands](./doc/numIsLands/算法222.md)】*** Given a 2d grid map of '1's (land) and '0's (water), count the number of islands. An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water.
 Example 1:
 ```
 Input:
@@ -424,6 +424,7 @@ You can assume that you can always reach the last index.
 ## 加密算法专题
 56. AES
 57. RSA
+<<<<<<< HEAD
 
 ## Leetcode 算法
 
@@ -553,3 +554,5 @@ You can assume that you can always reach the last index.
 
 > 本算法目录中Leetcode章节中的算法来自[leetcode](https://leetcode-cn.com/)。请勿商业使用！
 
+=======
+>>>>>>> 6f999dc451351e16f3b0aba4cd586b395e9e8e85
