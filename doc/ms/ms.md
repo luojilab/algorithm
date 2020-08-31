@@ -49,7 +49,7 @@ public class MaximalSquare {
     }
 }
 
-```java
+```
 
 讲解：
 
