@@ -49,6 +49,8 @@ public class MaximalSquare {
     }
 }
 
+```java
+
 讲解：
 
 我们用 dp(i, j) 表示以 (i, j) 为右下角，且只包含 1 的正方形的边长最大值。
