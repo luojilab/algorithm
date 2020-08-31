@@ -312,7 +312,7 @@ Input:
 Output: 3
 ```
 
-48.  ***[【Maximal Square】(./doc/Maximal Square/Maximal_Square.md)]*** Given a 2D binary matrix filled with 0's and 1's, find the largest square containing only 1's and return its area.
+48.  ***【Maximal Square】(./doc/Maximal_Square/Maximal_Square.md) *** Given a 2D binary matrix filled with 0's and 1's, find the largest square containing only 1's and return its area.
 
 Example:
 ```
