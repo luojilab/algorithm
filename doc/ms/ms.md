@@ -21,7 +21,7 @@ For example, given the following matrix:
 Return 4.
 
 
-#### 2、动态规划：
+#### 动态规划：
 
 递推公式：dp[i][j] = min(dp[i][j-1], dp[i-1][j], dp[i-1][j-1]) + 1
 
@@ -51,7 +51,7 @@ public class MaximalSquare {
 
 ```
 
-讲解：
+#### 讲解：
 
 我们用 dp(i, j) 表示以 (i, j) 为右下角，且只包含 1 的正方形的边长最大值。
 
